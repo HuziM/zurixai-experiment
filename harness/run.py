@@ -29,6 +29,7 @@ from harness.transcript import read_events, source_files, summarize
 FINISHED = {"done", "truncated", "no_code"}
 RETRY_LATER = {429, 500, 502, 503, 504, 529}
 BACKOFF_S = 60
+STOP_AFTER_RATE_LIMITED = 3
 
 
 def classify(exit_code: int | None, facts: dict, files: list[str]) -> str:
@@ -149,6 +150,7 @@ def main(argv: list[str] | None = None) -> int:
 
     args.out.mkdir(parents=True, exist_ok=True)
     done = 0
+    rate_limited_in_a_row = 0
     with ThreadPoolExecutor(max_workers=args.concurrency or cfg["concurrency"]) as pool:
         futures = {pool.submit(execute, run, args.out, cfg, suffix): run for run in runs}
         for future in as_completed(futures):
@@ -157,6 +159,16 @@ def main(argv: list[str] | None = None) -> int:
             cost = meta.get("cost_usd")
             print(f"[{done}/{len(runs)}] {meta['run_id']}: {meta['status']}"
                   + (f" ${cost:.2f}" if isinstance(cost, (int, float)) else ""), flush=True)
+            if meta["status"] == "infra_failed" and meta.get("api_error_status") == 429:
+                rate_limited_in_a_row += 1
+            else:
+                rate_limited_in_a_row = 0
+            if rate_limited_in_a_row >= STOP_AFTER_RATE_LIMITED:
+                for pending in futures:
+                    pending.cancel()
+                print(f"Stopped: {STOP_AFTER_RATE_LIMITED} runs in a row hit a usage/rate limit (429). "
+                      "Rerun the same command after the limit resets; finished runs are skipped.", flush=True)
+                return 2
     return 0
 
 
