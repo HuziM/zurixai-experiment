@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+# Raw run data is large; it is published as a GitHub release asset, not committed.
+runs/
+pilot/runs/
+pilot/stops/

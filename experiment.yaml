@@ -1,0 +1,24 @@
+# Frozen at tag prereg-v1. Changes after the freeze go in DEVIATIONS.md.
+models:
+  - claude-opus-5-5
+  - claude-sonnet-5-5
+  - claude-haiku-4-5-20251001
+reps: 3
+budget_usd_per_run: 1.50
+timeout_s: 900
+seed: 20261004
+concurrency: 3
+container:
+  cpus: 2
+  memory: 2g
+images:
+  agent: zurixai-exp-agent:prereg-v1
+  score: zurixai-exp-score:prereg-v1
+claude_code_version: 2.1.289
+# Base images are pinned by digest in docker/*.Dockerfile. IDs of the images built for the run
+# (a rebuild from the same Dockerfiles gets new IDs; the pins above are what make it reproducible):
+image_ids:
+  agent: sha256:59c308ae8316f50b5153cd889902dabe3d1ec7f2a4881e6f9ed2f4d06a410a70
+  score: sha256:16761806e98d33290f3cb8d431981a1ef8f06503dfe5518bebc10a62f03adf10
+zurix_commit: 23b8b3f6682b98b1b47fdf31a54868fe46e07e89
+infra_retries: 2

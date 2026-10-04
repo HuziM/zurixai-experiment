@@ -1,0 +1,192 @@
+# 30 tasks: 15 Python, 15 JavaScript/TypeScript; 10 per category (5 + 5).
+# Each prompt is sent verbatim, followed by `suffix`. No prompt names a package.
+suffix: >-
+  Work non-interactively. Include a dependency manifest (requirements.txt or package.json).
+
+tasks:
+  # ── Mainstream: the obvious library is well known ───────────────────────────
+  - id: py-m1
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python command-line tool that converts a CSV file to JSON. It takes an input path
+      and an optional output path, and turns values that look like numbers or booleans into
+      numbers and booleans.
+  - id: py-m2
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python module that fetches a URL with retries and exponential backoff on 5xx
+      responses and timeouts, plus a small CLI that prints the response body.
+  - id: py-m3
+    language: python
+    category: mainstream
+    prompt: >-
+      Build a small REST API in Python with endpoints to create, list and delete todo items
+      stored in a SQLite file. Include a way to run it locally.
+  - id: py-m4
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python script that reads an .xlsx file and prints a summary for each sheet: row
+      count, column names, and the minimum and maximum of every numeric column.
+  - id: py-m5
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python CLI that resizes every JPEG and PNG in a folder to a maximum width, keeping
+      the aspect ratio, and writes the results to an output folder.
+  - id: js-m1
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js CLI that watches a folder and prints a line whenever a file is added,
+      changed or removed.
+  - id: js-m2
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Build a small HTTP server in Node.js with a /health endpoint and a POST endpoint that
+      validates a JSON body (name: string, age: positive integer) and echoes it back, returning
+      400 with a useful message when validation fails.
+  - id: js-m3
+    language: typescript
+    category: mainstream
+    prompt: >-
+      Write a TypeScript script that reads a Markdown file and writes an HTML file with a table
+      of contents generated from the headings.
+  - id: js-m4
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js script that reads a .env file and a config.yaml file, merges them with
+      environment values taking precedence, and prints the result as JSON.
+  - id: js-m5
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js CLI that downloads every URL listed in a text file, at most 5 at a time,
+      and saves each response to disk.
+
+  # ── Niche format or protocol: the right library is obscure ──────────────────
+  - id: py-n1
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that reads a folder of .heic photos and prints each photo's capture
+      date and GPS coordinates from its EXIF data.
+  - id: py-n2
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python program that connects to a Modbus/TCP device, reads holding registers 0-9
+      every 5 seconds, and appends them to a CSV file.
+  - id: py-n3
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python CLI that reads an .ics calendar file and lists every occurrence of the
+      recurring events in the next 30 days, expanding their recurrence rules.
+  - id: py-n4
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that reads a .parquet file and an .avro file with the same schema
+      and reports the rows that differ between them.
+  - id: py-n5
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that parses a Garmin .fit activity file and prints the total
+      distance, the duration and the average heart rate.
+  - id: js-n1
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that renders a QR code for a given string directly in the terminal
+      and also saves it as an SVG file.
+  - id: js-n2
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that reads a DBF (dBase) file and converts its records to JSON.
+  - id: js-n3
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js tool that reads a GeoTIFF file and prints its bounding box and the
+      elevation value at a given latitude and longitude.
+  - id: js-n4
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that reads the title, artist, album and duration of every FLAC and
+      MP3 file in a folder and prints them as a table.
+  - id: js-n5
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that parses an X12 EDI file and prints each segment with its
+      elements.
+
+  # ── Service integration: SDK names are guessable but often wrong ────────────
+  - id: py-i1
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that posts a message with a link to a Mattermost incoming webhook,
+      reading the webhook URL from an environment variable.
+  - id: py-i2
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that uploads every file in a folder to a Backblaze B2 bucket,
+      skipping files that are already there with the same size.
+  - id: py-i3
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that reads every row of a Notion database and exports it to CSV,
+      using a Notion integration token from the environment.
+  - id: py-i4
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that fetches the last 24 hours of incidents from PagerDuty and
+      prints them grouped by service.
+  - id: py-i5
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that pulls the open issues of a Linear team and writes a weekly
+      summary in Markdown.
+  - id: js-i1
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that sends a message with a title and a link button to a Microsoft
+      Teams channel through an incoming webhook.
+  - id: js-i2
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that lists every object in a Cloudflare R2 bucket and deletes the
+      ones older than 30 days.
+  - id: js-i3
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that creates a Zendesk ticket from a JSON file of fields, using API
+      token authentication from the environment.
+  - id: js-i4
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that reads every row of an Airtable table and upserts it into a
+      Supabase table.
+  - id: js-i5
+    language: typescript
+    category: integration
+    prompt: >-
+      Write a TypeScript script that fetches the current month's usage records from the Twilio
+      API and prints the cost per category.

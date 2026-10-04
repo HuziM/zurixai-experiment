@@ -1,0 +1,547 @@
+{
+  "primary": {
+    "overall": {
+      "k": 0,
+      "n": 7,
+      "pct": 0.0,
+      "ci95_task_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "zero_upper95_wilson_over_tasks": 56.1
+    },
+    "by_category": {
+      "integration": {
+        "k": 0,
+        "n": 2,
+        "pct": 0.0,
+        "ci95_task_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "zero_upper95_wilson_over_tasks": 79.3
+      },
+      "mainstream": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0,
+        "ci95_task_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "zero_upper95_wilson_over_tasks": 79.3
+      },
+      "niche": {
+        "k": 0,
+        "n": 2,
+        "pct": 0.0,
+        "ci95_task_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "zero_upper95_wilson_over_tasks": 79.3
+      }
+    },
+    "by_model": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "n": 1,
+        "pct": 0.0,
+        "ci95_wilson": [
+          0.0,
+          79.3
+        ],
+        "zero_upper95_wilson_over_tasks": 79.3,
+        "by_category": {
+          "integration": {
+            "k": 0,
+            "n": 0,
+            "pct": null
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 0,
+            "pct": null
+          }
+        }
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0,
+        "ci95_wilson": [
+          0.0,
+          56.1
+        ],
+        "zero_upper95_wilson_over_tasks": 56.1,
+        "by_category": {
+          "integration": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          }
+        }
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0,
+        "ci95_wilson": [
+          0.0,
+          56.1
+        ],
+        "zero_upper95_wilson_over_tasks": 56.1,
+        "by_category": {
+          "integration": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 1,
+            "pct": 0.0
+          }
+        }
+      }
+    }
+  },
+  "tasks_with_phantom": {
+    "overall": 0,
+    "of": 30,
+    "by_model": {
+      "claude-opus-5-5": 0,
+      "claude-sonnet-5-5": 0,
+      "claude-haiku-4-5-20251001": 0
+    }
+  },
+  "secondary": {
+    "undeclared_import": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "n": 1,
+        "pct": 0.0
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 0,
+        "n": 3,
+        "pct": 0.0
+      }
+    },
+    "pinned_version_that_does_not_exist": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "n": 1,
+        "examples": []
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 3,
+        "examples": []
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 1,
+        "n": 3,
+        "examples": [
+          "exifread==0.14.0"
+        ]
+      }
+    },
+    "install_fails": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "no_manifest": 0,
+        "n": 1
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "no_manifest": 0,
+        "n": 3
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 1,
+        "no_manifest": 0,
+        "n": 3
+      }
+    },
+    "never_ran_install": {
+      "claude-opus-5-5": {
+        "k": 1,
+        "n": 1
+      },
+      "claude-sonnet-5-5": {
+        "k": 3,
+        "n": 3
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 3,
+        "n": 3
+      }
+    },
+    "detector_precision": {
+      "reported": 0,
+      "confirmed": 0,
+      "pct": null
+    },
+    "detector_recall": {
+      "confirmed_total": 0,
+      "found_by_zurix": 0,
+      "pct": null
+    },
+    "phantom_kinds": {
+      "not_in_manifest": 0,
+      "in_manifest": 0,
+      "install_not_found": 0
+    },
+    "per_task_consistency": {
+      "claude-opus-5-5": {
+        "0": 1
+      },
+      "claude-sonnet-5-5": {
+        "0": 3
+      },
+      "claude-haiku-4-5-20251001": {
+        "0": 3
+      }
+    },
+    "cost_and_turns": {
+      "claude-opus-5-5": {
+        "total_usd": 0.13,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.131,
+        "median_turns": 5
+      },
+      "claude-sonnet-5-5": {
+        "total_usd": 0.29,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.085,
+        "median_turns": 4
+      },
+      "claude-haiku-4-5-20251001": {
+        "total_usd": 0.15,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.053,
+        "median_turns": 7
+      }
+    }
+  },
+  "run_status": {
+    "claude-opus-5-5": {
+      "done": 1
+    },
+    "claude-sonnet-5-5": {
+      "done": 3
+    },
+    "claude-haiku-4-5-20251001": {
+      "done": 3
+    }
+  },
+  "truncation_rate": {
+    "claude-opus-5-5": {
+      "k": 0,
+      "n": 1,
+      "pct": 0.0
+    },
+    "claude-sonnet-5-5": {
+      "k": 0,
+      "n": 3,
+      "pct": 0.0
+    },
+    "claude-haiku-4-5-20251001": {
+      "k": 0,
+      "n": 3,
+      "pct": 0.0
+    }
+  },
+  "unreviewed_phantoms": 0,
+  "completeness_problems": [
+    "no score file: js-i1__claude-haiku-4-5-20251001__r2",
+    "no score file: js-i1__claude-haiku-4-5-20251001__r3",
+    "no score file: js-i1__claude-opus-5-5__r1",
+    "no score file: js-i1__claude-opus-5-5__r2",
+    "no score file: js-i1__claude-opus-5-5__r3",
+    "no score file: js-i1__claude-sonnet-5-5__r2",
+    "no score file: js-i1__claude-sonnet-5-5__r3",
+    "no score file: js-i2__claude-haiku-4-5-20251001__r1",
+    "no score file: js-i2__claude-haiku-4-5-20251001__r2",
+    "no score file: js-i2__claude-haiku-4-5-20251001__r3",
+    "no score file: js-i2__claude-opus-5-5__r1",
+    "no score file: js-i2__claude-opus-5-5__r2",
+    "no score file: js-i2__claude-opus-5-5__r3",
+    "no score file: js-i2__claude-sonnet-5-5__r1",
+    "no score file: js-i2__claude-sonnet-5-5__r2",
+    "no score file: js-i2__claude-sonnet-5-5__r3",
+    "no score file: js-i3__claude-haiku-4-5-20251001__r1",
+    "no score file: js-i3__claude-haiku-4-5-20251001__r2",
+    "no score file: js-i3__claude-haiku-4-5-20251001__r3",
+    "no score file: js-i3__claude-opus-5-5__r1",
+    "no score file: js-i3__claude-opus-5-5__r2",
+    "no score file: js-i3__claude-opus-5-5__r3",
+    "no score file: js-i3__claude-sonnet-5-5__r1",
+    "no score file: js-i3__claude-sonnet-5-5__r2",
+    "no score file: js-i3__claude-sonnet-5-5__r3",
+    "no score file: js-i4__claude-haiku-4-5-20251001__r1",
+    "no score file: js-i4__claude-haiku-4-5-20251001__r2",
+    "no score file: js-i4__claude-haiku-4-5-20251001__r3",
+    "no score file: js-i4__claude-opus-5-5__r1",
+    "no score file: js-i4__claude-opus-5-5__r2",
+    "no score file: js-i4__claude-opus-5-5__r3",
+    "no score file: js-i4__claude-sonnet-5-5__r1",
+    "no score file: js-i4__claude-sonnet-5-5__r2",
+    "no score file: js-i4__claude-sonnet-5-5__r3",
+    "no score file: js-i5__claude-haiku-4-5-20251001__r1",
+    "no score file: js-i5__claude-haiku-4-5-20251001__r2",
+    "no score file: js-i5__claude-haiku-4-5-20251001__r3",
+    "no score file: js-i5__claude-opus-5-5__r1",
+    "no score file: js-i5__claude-opus-5-5__r2",
+    "no score file: js-i5__claude-opus-5-5__r3",
+    "no score file: js-i5__claude-sonnet-5-5__r1",
+    "no score file: js-i5__claude-sonnet-5-5__r2",
+    "no score file: js-i5__claude-sonnet-5-5__r3",
+    "no score file: js-m1__claude-haiku-4-5-20251001__r1",
+    "no score file: js-m1__claude-haiku-4-5-20251001__r2",
+    "no score file: js-m1__claude-haiku-4-5-20251001__r3",
+    "no score file: js-m1__claude-opus-5-5__r1",
+    "no score file: js-m1__claude-opus-5-5__r2",
+    "no score file: js-m1__claude-opus-5-5__r3",
+    "no score file: js-m1__claude-sonnet-5-5__r1",
+    "no score file: js-m1__claude-sonnet-5-5__r2",
+    "no score file: js-m1__claude-sonnet-5-5__r3",
+    "no score file: js-m2__claude-haiku-4-5-20251001__r1",
+    "no score file: js-m2__claude-haiku-4-5-20251001__r2",
+    "no score file: js-m2__claude-haiku-4-5-20251001__r3",
+    "no score file: js-m2__claude-opus-5-5__r1",
+    "no score file: js-m2__claude-opus-5-5__r2",
+    "no score file: js-m2__claude-opus-5-5__r3",
+    "no score file: js-m2__claude-sonnet-5-5__r1",
+    "no score file: js-m2__claude-sonnet-5-5__r2",
+    "no score file: js-m2__claude-sonnet-5-5__r3",
+    "no score file: js-m3__claude-haiku-4-5-20251001__r1",
+    "no score file: js-m3__claude-haiku-4-5-20251001__r2",
+    "no score file: js-m3__claude-haiku-4-5-20251001__r3",
+    "no score file: js-m3__claude-opus-5-5__r1",
+    "no score file: js-m3__claude-opus-5-5__r2",
+    "no score file: js-m3__claude-opus-5-5__r3",
+    "no score file: js-m3__claude-sonnet-5-5__r1",
+    "no score file: js-m3__claude-sonnet-5-5__r2",
+    "no score file: js-m3__claude-sonnet-5-5__r3",
+    "no score file: js-m4__claude-haiku-4-5-20251001__r1",
+    "no score file: js-m4__claude-haiku-4-5-20251001__r2",
+    "no score file: js-m4__claude-haiku-4-5-20251001__r3",
+    "no score file: js-m4__claude-opus-5-5__r1",
+    "no score file: js-m4__claude-opus-5-5__r2",
+    "no score file: js-m4__claude-opus-5-5__r3",
+    "no score file: js-m4__claude-sonnet-5-5__r1",
+    "no score file: js-m4__claude-sonnet-5-5__r2",
+    "no score file: js-m4__claude-sonnet-5-5__r3",
+    "no score file: js-m5__claude-haiku-4-5-20251001__r1",
+    "no score file: js-m5__claude-haiku-4-5-20251001__r2",
+    "no score file: js-m5__claude-haiku-4-5-20251001__r3",
+    "no score file: js-m5__claude-opus-5-5__r1",
+    "no score file: js-m5__claude-opus-5-5__r2",
+    "no score file: js-m5__claude-opus-5-5__r3",
+    "no score file: js-m5__claude-sonnet-5-5__r1",
+    "no score file: js-m5__claude-sonnet-5-5__r2",
+    "no score file: js-m5__claude-sonnet-5-5__r3",
+    "no score file: js-n1__claude-haiku-4-5-20251001__r1",
+    "no score file: js-n1__claude-haiku-4-5-20251001__r2",
+    "no score file: js-n1__claude-haiku-4-5-20251001__r3",
+    "no score file: js-n1__claude-opus-5-5__r1",
+    "no score file: js-n1__claude-opus-5-5__r2",
+    "no score file: js-n1__claude-opus-5-5__r3",
+    "no score file: js-n1__claude-sonnet-5-5__r1",
+    "no score file: js-n1__claude-sonnet-5-5__r2",
+    "no score file: js-n1__claude-sonnet-5-5__r3",
+    "no score file: js-n2__claude-haiku-4-5-20251001__r1",
+    "no score file: js-n2__claude-haiku-4-5-20251001__r2",
+    "no score file: js-n2__claude-haiku-4-5-20251001__r3",
+    "no score file: js-n2__claude-opus-5-5__r1",
+    "no score file: js-n2__claude-opus-5-5__r2",
+    "no score file: js-n2__claude-opus-5-5__r3",
+    "no score file: js-n2__claude-sonnet-5-5__r1",
+    "no score file: js-n2__claude-sonnet-5-5__r2",
+    "no score file: js-n2__claude-sonnet-5-5__r3",
+    "no score file: js-n3__claude-haiku-4-5-20251001__r1",
+    "no score file: js-n3__claude-haiku-4-5-20251001__r2",
+    "no score file: js-n3__claude-haiku-4-5-20251001__r3",
+    "no score file: js-n3__claude-opus-5-5__r1",
+    "no score file: js-n3__claude-opus-5-5__r2",
+    "no score file: js-n3__claude-opus-5-5__r3",
+    "no score file: js-n3__claude-sonnet-5-5__r1",
+    "no score file: js-n3__claude-sonnet-5-5__r2",
+    "no score file: js-n3__claude-sonnet-5-5__r3",
+    "no score file: js-n4__claude-haiku-4-5-20251001__r1",
+    "no score file: js-n4__claude-haiku-4-5-20251001__r2",
+    "no score file: js-n4__claude-haiku-4-5-20251001__r3",
+    "no score file: js-n4__claude-opus-5-5__r1",
+    "no score file: js-n4__claude-opus-5-5__r2",
+    "no score file: js-n4__claude-opus-5-5__r3",
+    "no score file: js-n4__claude-sonnet-5-5__r1",
+    "no score file: js-n4__claude-sonnet-5-5__r2",
+    "no score file: js-n4__claude-sonnet-5-5__r3",
+    "no score file: js-n5__claude-haiku-4-5-20251001__r1",
+    "no score file: js-n5__claude-haiku-4-5-20251001__r2",
+    "no score file: js-n5__claude-haiku-4-5-20251001__r3",
+    "no score file: js-n5__claude-opus-5-5__r1",
+    "no score file: js-n5__claude-opus-5-5__r2",
+    "no score file: js-n5__claude-opus-5-5__r3",
+    "no score file: js-n5__claude-sonnet-5-5__r1",
+    "no score file: js-n5__claude-sonnet-5-5__r2",
+    "no score file: js-n5__claude-sonnet-5-5__r3",
+    "no score file: py-i1__claude-haiku-4-5-20251001__r1",
+    "no score file: py-i1__claude-haiku-4-5-20251001__r2",
+    "no score file: py-i1__claude-haiku-4-5-20251001__r3",
+    "no score file: py-i1__claude-opus-5-5__r1",
+    "no score file: py-i1__claude-opus-5-5__r2",
+    "no score file: py-i1__claude-opus-5-5__r3",
+    "no score file: py-i1__claude-sonnet-5-5__r1",
+    "no score file: py-i1__claude-sonnet-5-5__r2",
+    "no score file: py-i1__claude-sonnet-5-5__r3",
+    "no score file: py-i2__claude-haiku-4-5-20251001__r1",
+    "no score file: py-i2__claude-haiku-4-5-20251001__r2",
+    "no score file: py-i2__claude-haiku-4-5-20251001__r3",
+    "no score file: py-i2__claude-opus-5-5__r1",
+    "no score file: py-i2__claude-opus-5-5__r2",
+    "no score file: py-i2__claude-opus-5-5__r3",
+    "no score file: py-i2__claude-sonnet-5-5__r1",
+    "no score file: py-i2__claude-sonnet-5-5__r2",
+    "no score file: py-i2__claude-sonnet-5-5__r3",
+    "no score file: py-i3__claude-haiku-4-5-20251001__r1",
+    "no score file: py-i3__claude-haiku-4-5-20251001__r2",
+    "no score file: py-i3__claude-haiku-4-5-20251001__r3",
+    "no score file: py-i3__claude-opus-5-5__r1",
+    "no score file: py-i3__claude-opus-5-5__r2",
+    "no score file: py-i3__claude-opus-5-5__r3",
+    "no score file: py-i3__claude-sonnet-5-5__r1",
+    "no score file: py-i3__claude-sonnet-5-5__r2",
+    "no score file: py-i3__claude-sonnet-5-5__r3",
+    "no score file: py-i4__claude-haiku-4-5-20251001__r1",
+    "no score file: py-i4__claude-haiku-4-5-20251001__r2",
+    "no score file: py-i4__claude-haiku-4-5-20251001__r3",
+    "no score file: py-i4__claude-opus-5-5__r1",
+    "no score file: py-i4__claude-opus-5-5__r2",
+    "no score file: py-i4__claude-opus-5-5__r3",
+    "no score file: py-i4__claude-sonnet-5-5__r1",
+    "no score file: py-i4__claude-sonnet-5-5__r2",
+    "no score file: py-i4__claude-sonnet-5-5__r3",
+    "no score file: py-i5__claude-haiku-4-5-20251001__r1",
+    "no score file: py-i5__claude-haiku-4-5-20251001__r2",
+    "no score file: py-i5__claude-haiku-4-5-20251001__r3",
+    "no score file: py-i5__claude-opus-5-5__r1",
+    "no score file: py-i5__claude-opus-5-5__r2",
+    "no score file: py-i5__claude-opus-5-5__r3",
+    "no score file: py-i5__claude-sonnet-5-5__r1",
+    "no score file: py-i5__claude-sonnet-5-5__r2",
+    "no score file: py-i5__claude-sonnet-5-5__r3",
+    "no score file: py-m1__claude-haiku-4-5-20251001__r2",
+    "no score file: py-m1__claude-haiku-4-5-20251001__r3",
+    "no score file: py-m1__claude-opus-5-5__r2",
+    "no score file: py-m1__claude-opus-5-5__r3",
+    "no score file: py-m1__claude-sonnet-5-5__r2",
+    "no score file: py-m1__claude-sonnet-5-5__r3",
+    "no score file: py-m2__claude-haiku-4-5-20251001__r1",
+    "no score file: py-m2__claude-haiku-4-5-20251001__r2",
+    "no score file: py-m2__claude-haiku-4-5-20251001__r3",
+    "no score file: py-m2__claude-opus-5-5__r1",
+    "no score file: py-m2__claude-opus-5-5__r2",
+    "no score file: py-m2__claude-opus-5-5__r3",
+    "no score file: py-m2__claude-sonnet-5-5__r1",
+    "no score file: py-m2__claude-sonnet-5-5__r2",
+    "no score file: py-m2__claude-sonnet-5-5__r3",
+    "no score file: py-m3__claude-haiku-4-5-20251001__r1",
+    "no score file: py-m3__claude-haiku-4-5-20251001__r2",
+    "no score file: py-m3__claude-haiku-4-5-20251001__r3",
+    "no score file: py-m3__claude-opus-5-5__r1",
+    "no score file: py-m3__claude-opus-5-5__r2",
+    "no score file: py-m3__claude-opus-5-5__r3",
+    "no score file: py-m3__claude-sonnet-5-5__r1",
+    "no score file: py-m3__claude-sonnet-5-5__r2",
+    "no score file: py-m3__claude-sonnet-5-5__r3",
+    "no score file: py-m4__claude-haiku-4-5-20251001__r1",
+    "no score file: py-m4__claude-haiku-4-5-20251001__r2",
+    "no score file: py-m4__claude-haiku-4-5-20251001__r3",
+    "no score file: py-m4__claude-opus-5-5__r1",
+    "no score file: py-m4__claude-opus-5-5__r2",
+    "no score file: py-m4__claude-opus-5-5__r3",
+    "no score file: py-m4__claude-sonnet-5-5__r1",
+    "no score file: py-m4__claude-sonnet-5-5__r2",
+    "no score file: py-m4__claude-sonnet-5-5__r3",
+    "no score file: py-m5__claude-haiku-4-5-20251001__r1",
+    "no score file: py-m5__claude-haiku-4-5-20251001__r2",
+    "no score file: py-m5__claude-haiku-4-5-20251001__r3",
+    "no score file: py-m5__claude-opus-5-5__r1",
+    "no score file: py-m5__claude-opus-5-5__r2",
+    "no score file: py-m5__claude-opus-5-5__r3",
+    "no score file: py-m5__claude-sonnet-5-5__r1",
+    "no score file: py-m5__claude-sonnet-5-5__r2",
+    "no score file: py-m5__claude-sonnet-5-5__r3",
+    "no score file: py-n1__claude-haiku-4-5-20251001__r2",
+    "no score file: py-n1__claude-haiku-4-5-20251001__r3",
+    "no score file: py-n1__claude-opus-5-5__r1",
+    "no score file: py-n1__claude-opus-5-5__r2",
+    "no score file: py-n1__claude-opus-5-5__r3",
+    "no score file: py-n1__claude-sonnet-5-5__r2",
+    "no score file: py-n1__claude-sonnet-5-5__r3",
+    "no score file: py-n2__claude-haiku-4-5-20251001__r1",
+    "no score file: py-n2__claude-haiku-4-5-20251001__r2",
+    "no score file: py-n2__claude-haiku-4-5-20251001__r3",
+    "no score file: py-n2__claude-opus-5-5__r1",
+    "no score file: py-n2__claude-opus-5-5__r2",
+    "no score file: py-n2__claude-opus-5-5__r3",
+    "no score file: py-n2__claude-sonnet-5-5__r1",
+    "no score file: py-n2__claude-sonnet-5-5__r2",
+    "no score file: py-n2__claude-sonnet-5-5__r3",
+    "no score file: py-n3__claude-haiku-4-5-20251001__r1",
+    "no score file: py-n3__claude-haiku-4-5-20251001__r2",
+    "no score file: py-n3__claude-haiku-4-5-20251001__r3",
+    "no score file: py-n3__claude-opus-5-5__r1",
+    "no score file: py-n3__claude-opus-5-5__r2",
+    "no score file: py-n3__claude-opus-5-5__r3",
+    "no score file: py-n3__claude-sonnet-5-5__r1",
+    "no score file: py-n3__claude-sonnet-5-5__r2",
+    "no score file: py-n3__claude-sonnet-5-5__r3",
+    "no score file: py-n4__claude-haiku-4-5-20251001__r1",
+    "no score file: py-n4__claude-haiku-4-5-20251001__r2",
+    "no score file: py-n4__claude-haiku-4-5-20251001__r3",
+    "no score file: py-n4__claude-opus-5-5__r1",
+    "no score file: py-n4__claude-opus-5-5__r2",
+    "no score file: py-n4__claude-opus-5-5__r3",
+    "no score file: py-n4__claude-sonnet-5-5__r1",
+    "no score file: py-n4__claude-sonnet-5-5__r2",
+    "no score file: py-n4__claude-sonnet-5-5__r3",
+    "no score file: py-n5__claude-haiku-4-5-20251001__r1",
+    "no score file: py-n5__claude-haiku-4-5-20251001__r2",
+    "no score file: py-n5__claude-haiku-4-5-20251001__r3",
+    "no score file: py-n5__claude-opus-5-5__r1",
+    "no score file: py-n5__claude-opus-5-5__r2",
+    "no score file: py-n5__claude-opus-5-5__r3",
+    "no score file: py-n5__claude-sonnet-5-5__r1",
+    "no score file: py-n5__claude-sonnet-5-5__r2",
+    "no score file: py-n5__claude-sonnet-5-5__r3"
+  ]
+}
