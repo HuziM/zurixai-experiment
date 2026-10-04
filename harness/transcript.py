@@ -61,6 +61,7 @@ def summarize(events: list[dict]) -> dict:
         "num_turns": result.get("num_turns"),
         "budget_hit": "budget" in subtype,
         "api_error_status": result.get("api_error_status"),
+        "error_message": str(result.get("result") or "")[:500] if result.get("is_error") else None,
         "ran_install": any(_INSTALL.search(c) for c in commands),
         "ran_code": any(_RUN_CODE.search(c) for c in commands),
         "bash_commands": len(commands),

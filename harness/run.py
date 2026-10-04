@@ -44,6 +44,25 @@ def classify(exit_code: int | None, facts: dict, files: list[str]) -> str:
     return "done"
 
 
+def needs_run(meta: dict | None) -> bool:
+    """Whether a run still has to be (re)run.
+
+    Finished runs never rerun. An infrastructure failure already had its pre-registered retries,
+    so it stays excluded, except a usage/rate limit (429): those runs never actually ran and are
+    run again once the limit resets.
+    """
+    if meta is None:
+        return True
+    if meta.get("status") in FINISHED:
+        return False
+    return meta.get("status") != "infra_failed" or meta.get("api_error_status") == 429
+
+
+def read_meta(run_dir: Path) -> dict | None:
+    path = run_dir / "meta.json"
+    return json.loads(path.read_text()) if path.is_file() else None
+
+
 def _container_name(run: Run) -> str:
     return "zxexp-" + hashlib.sha1(run.id.encode()).hexdigest()[:12]
 
@@ -84,8 +103,9 @@ def _attempt(run: Run, run_dir: Path, cfg: dict, prompt: str) -> tuple[int | Non
 def execute(run: Run, out: Path, cfg: dict, suffix: str) -> dict:
     run_dir = out / run.id
     meta_path = run_dir / "meta.json"
-    if meta_path.is_file() and json.loads(meta_path.read_text()).get("status") in FINISHED:
-        return json.loads(meta_path.read_text())
+    existing = read_meta(run_dir)
+    if not needs_run(existing):
+        return existing  # type: ignore[return-value]
     run_dir.mkdir(parents=True, exist_ok=True)
     prompt = full_prompt(run.task, suffix)
     attempts = []
@@ -110,7 +130,7 @@ def execute(run: Run, out: Path, cfg: dict, suffix: str) -> dict:
     return meta
 
 
-def main(argv: list[str] | None = None) -> int:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--out", type=Path, default=ROOT / "runs")
     parser.add_argument("--tasks", help="comma-separated task ids (default: all)")
@@ -120,8 +140,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--budget-usd", type=float, help="pilot only: override the per-run budget")
     parser.add_argument("--timeout-s", type=int, help="pilot only: override the per-run timeout")
     parser.add_argument("--dry-run", action="store_true")
-    args = parser.parse_args(argv)
+    return parser
 
+
+def plan(args: argparse.Namespace, parser: argparse.ArgumentParser) -> tuple[dict, list[Run], str]:
     cfg = load_config()
     if args.budget_usd is not None:
         cfg["budget_usd_per_run"] = args.budget_usd
@@ -134,7 +156,13 @@ def main(argv: list[str] | None = None) -> int:
         if len(tasks) != len(wanted):
             parser.error("unknown task id in --tasks")
     models = args.models.split(",") if args.models else cfg["models"]
-    runs = plan_runs(tasks, models, args.reps or cfg["reps"], cfg["seed"])
+    return cfg, plan_runs(tasks, models, args.reps or cfg["reps"], cfg["seed"]), suffix
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    cfg, runs, suffix = plan(args, parser)
 
     if args.dry_run:
         for run in runs:

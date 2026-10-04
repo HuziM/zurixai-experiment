@@ -256,3 +256,31 @@ def test_zero_result_reports_a_task_level_upper_bound() -> None:
     overall = compute(records, tasks, ["m1"], seed=1)["primary"]["overall"]
     assert overall["k"] == 0
     assert overall["zero_upper95_wilson_over_tasks"] == round(100 * wilson(0, 3)[1], 1)
+
+
+# ── Which runs get run again ────────────────────────────────────────────────────
+
+@pytest.mark.parametrize(("meta", "expected"), [
+    (None, True),
+    ({"status": "done"}, False),
+    ({"status": "truncated"}, False),
+    ({"status": "no_code"}, False),
+    ({"status": "infra_failed", "api_error_status": 429}, True),
+    ({"status": "infra_failed", "api_error_status": 500}, False),
+    ({"status": "infra_failed", "api_error_status": None}, False),
+])
+def test_needs_run(meta, expected) -> None:
+    from harness.run import needs_run
+
+    assert needs_run(meta) is expected
+
+
+def test_loop_counts_only_runs_still_to_do(tmp_path: Path) -> None:
+    from harness.loop import remaining
+
+    tasks, _ = load_tasks()
+    runs = plan_runs(tasks[:2], ["m"], 1, seed=1)
+    for r, meta in zip(runs, [{"status": "done"}, {"status": "infra_failed", "api_error_status": 429}]):
+        (tmp_path / r.id).mkdir()
+        (tmp_path / r.id / "meta.json").write_text(json.dumps(meta))
+    assert remaining(tmp_path, runs) == [runs[1].id]
