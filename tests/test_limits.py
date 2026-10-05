@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 from harness.limits import latest_reset, reset_time
-from harness.loop import RESET_MARGIN_S, SHORT_WAIT_S, wait_seconds
+from harness.loop import RESET_MARGIN_S, SHORT_WAIT_S, sleep_until, wait_seconds
 
 NOW = datetime(2026, 10, 5, 10, 0, tzinfo=UTC)  # a Monday
 
@@ -60,3 +60,16 @@ def test_unreadable_message_falls_back_to_fixed_wait(tmp_path: Path) -> None:
 
 def test_no_limit_stop_means_short_pause(tmp_path: Path) -> None:
     assert wait_seconds(tmp_path, ["a"], False, 5.5, NOW)[0] == SHORT_WAIT_S
+
+
+def test_sleep_until_follows_the_wall_clock_through_a_machine_sleep() -> None:
+    clock = {"t": NOW}
+    naps = []
+
+    def fake_sleep(seconds: float) -> None:
+        naps.append(seconds)
+        # The machine sleeps for 2 hours during the first nap: wall time jumps ahead.
+        clock["t"] += timedelta(seconds=seconds) + (timedelta(hours=2) if len(naps) == 1 else timedelta())
+
+    sleep_until(NOW + timedelta(hours=1), now=lambda: clock["t"], sleep=fake_sleep)
+    assert naps == [60]

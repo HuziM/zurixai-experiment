@@ -21,6 +21,14 @@ from harness.limits import latest_reset
 
 SHORT_WAIT_S = 15 * 60
 RESET_MARGIN_S = 5 * 60
+CHECK_EVERY_S = 60
+
+
+def sleep_until(target: datetime, now=lambda: datetime.now(UTC), sleep=time.sleep) -> None:
+    """Wait until a wall-clock time. Short naps against the real clock, because a single long
+    time.sleep() stops counting while the computer sleeps and would wake up late."""
+    while (left := (target - now()).total_seconds()) > 0:
+        sleep(min(CHECK_EVERY_S, left))
 
 
 def limit_messages(out: Path, run_ids: list[str]) -> list[str]:
@@ -84,10 +92,10 @@ def main(argv: list[str] | None = None) -> int:
             print(_finished(args.out, runs), flush=True)
             return 0
         wait_s, why = wait_seconds(args.out, left, code == 2, args.wait_hours, datetime.now(UTC))
-        resume = datetime.now() + timedelta(seconds=wait_s)
-        print(f"{len(left)} runs left; {why}. Next round at {resume:%Y-%m-%d %H:%M} (this machine's time).",
-              flush=True)
-        time.sleep(wait_s)
+        resume = datetime.now(UTC) + timedelta(seconds=wait_s)
+        print(f"{len(left)} runs left; {why}. Next round at {resume.astimezone():%Y-%m-%d %H:%M} "
+              "(this machine's time).", flush=True)
+        sleep_until(resume)
     print(f"Gave up after {args.max_rounds} rounds; {len(remaining(args.out, runs))} runs left. "
           "Check runs/run.log, then rerun.", flush=True)
     return 1
