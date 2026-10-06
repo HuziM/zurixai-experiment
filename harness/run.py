@@ -202,13 +202,16 @@ def main(argv: list[str] | None = None) -> int:
             cost = meta.get("cost_usd")
             print(f"[{done}/{len(runs)}] {meta['run_id']}: {meta['status']}"
                   + (f" ${cost:.2f}" if isinstance(cost, (int, float)) else ""), flush=True)
-            if meta["status"] == "infra_failed" and meta.get("api_error_status") == 429:
-                rate_limited_in_a_row += 1
-            else:
-                rate_limited_in_a_row = 0
+            limited = meta["status"] == "infra_failed" and meta.get("api_error_status") == 429
+            offline = meta["status"] == "infra_failed" and unreachable(meta)
+            rate_limited_in_a_row = rate_limited_in_a_row + 1 if (limited or offline) else 0
             if rate_limited_in_a_row >= STOP_AFTER_RATE_LIMITED:
                 for pending in futures:
                     pending.cancel()
+                if offline:
+                    print(f"Stopped: {STOP_AFTER_RATE_LIMITED} runs in a row could not reach the API "
+                          "(network/DNS). Rerun once the network is back; finished runs are skipped.", flush=True)
+                    return 3
                 print(f"Stopped: {STOP_AFTER_RATE_LIMITED} runs in a row hit a usage/rate limit (429). "
                       "Rerun the same command after the limit resets; finished runs are skipped.", flush=True)
                 return 2

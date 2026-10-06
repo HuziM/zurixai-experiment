@@ -85,13 +85,16 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Round {round_no}: {len(left)} of {len(runs)} runs to go "
               f"({datetime.now():%Y-%m-%d %H:%M}).", flush=True)
         code = runner.main(forwarded)
-        if code not in (0, 2):
+        if code not in (0, 2, 3):
             return code
         left = remaining(args.out, runs)
         if not left:
             print(_finished(args.out, runs), flush=True)
             return 0
-        wait_s, why = wait_seconds(args.out, left, code == 2, args.wait_hours, datetime.now(UTC))
+        if code == 3:
+            wait_s, why = SHORT_WAIT_S, "API unreachable (network/DNS); checking again in 15 minutes"
+        else:
+            wait_s, why = wait_seconds(args.out, left, code == 2, args.wait_hours, datetime.now(UTC))
         resume = datetime.now(UTC) + timedelta(seconds=wait_s)
         print(f"{len(left)} runs left; {why}. Next round at {resume.astimezone():%Y-%m-%d %H:%M} "
               "(this machine's time).", flush=True)

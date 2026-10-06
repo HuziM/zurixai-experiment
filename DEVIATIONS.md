@@ -28,3 +28,6 @@ Changes made after tag `prereg-v1`, with date and reason. Empty means the run fo
   is back, like usage-limit stops; the model was never reached in any of them. No other run was
   affected (the other 222 finished runs have no error). Decided before any of these runs produced
   output, and before any scoring.
+- 2026-10-06, same change: if 3 runs in a row cannot reach the API, the run stops and the loop
+  tries again every 15 minutes, instead of using up the remaining runs during an outage.
+  Operational only.
