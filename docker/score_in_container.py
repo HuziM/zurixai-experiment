@@ -78,6 +78,11 @@ def _installs(work: Path) -> list[dict]:
 RESOLVE_TIMEOUT_S = 120
 
 
+def _plain(value: str) -> bool:
+    """Manifest values are written by the agent: never let one be read as a command-line option."""
+    return bool(value) and not value.lstrip().startswith("-")
+
+
 def _python_requirements(work: Path) -> list[tuple[str, str]]:
     """(manifest, requirement) for every requirement line, skipping includes, editables and URLs."""
     reqs = []
@@ -94,7 +99,7 @@ def _python_requirements(work: Path) -> list[tuple[str, str]]:
             deps = tomllib.loads(pyproject.read_text(errors="replace")).get("project", {}).get("dependencies") or []
         except tomllib.TOMLDecodeError:
             deps = []
-        reqs += [("pyproject.toml", d) for d in deps if isinstance(d, str) and "://" not in d]
+        reqs += [("pyproject.toml", d) for d in deps if isinstance(d, str) and "://" not in d and _plain(d)]
     return reqs
 
 
@@ -109,7 +114,7 @@ def _npm_dependencies(work: Path) -> list[tuple[str, str]]:
     deps = []
     for field in ("dependencies", "devDependencies"):
         for name, rng in (data.get(field) or {}).items():
-            if isinstance(rng, str) and ":" not in rng and "/" not in rng:
+            if isinstance(rng, str) and ":" not in rng and "/" not in rng and _plain(name) and _plain(rng or "*"):
                 deps.append((name, rng.strip() or "*"))
     return deps
 
@@ -125,10 +130,10 @@ def _resolutions(work: Path) -> list[dict]:
         for manifest, req in reqs:
             records.append({"manifest": manifest, "requirement": req,
                             **_run([str(venv / "bin/pip"), "install", "--dry-run", "--no-deps",
-                                    "--ignore-installed", req], work, RESOLVE_TIMEOUT_S)})
+                                    "--ignore-installed", "--", req], work, RESOLVE_TIMEOUT_S)})
     for name, rng in _npm_dependencies(work):
         try:
-            proc = subprocess.run(["npm", "view", f"{name}@{rng}", "version", "--json"], cwd=work,
+            proc = subprocess.run(["npm", "view", "--json", "--", f"{name}@{rng}", "version"], cwd=work,
                                   capture_output=True, text=True, timeout=RESOLVE_TIMEOUT_S, check=False)
             records.append({"manifest": "package.json", "requirement": f"{name}@{rng}", "package": name,
                             "spec": rng, "cmd": f"npm view {name}@{rng} version --json", "exit": proc.returncode,
