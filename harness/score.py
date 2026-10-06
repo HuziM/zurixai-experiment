@@ -68,6 +68,26 @@ def install_findings(records: list[dict]) -> tuple[list[dict], list[dict]]:
     return list(packages.values()), list(versions.values())
 
 
+def resolution_findings(resolutions: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Missing packages and missing versions from per-dependency resolution (pip --dry-run / npm view)."""
+    packages: list[dict] = []
+    versions: list[dict] = []
+    for r in resolutions:
+        if r.get("manifest") == "package.json":
+            text = r.get("output_tail") or ""
+            if r.get("exit") not in (0, None) and ("E404" in text or "404 Not Found" in text):
+                packages.append({"package": r["package"], "registry": "npm"})
+            elif r.get("exit") == 0 and (r.get("stdout") or "").strip() in ("", "[]"):
+                versions.append({"package": r["package"], "registry": "npm", "requested": r["spec"]})
+            continue
+        if r.get("exit") == 0:
+            continue
+        found_packages, found_versions = install_findings([{**r, "manifest": "requirements.txt"}])
+        packages += found_packages
+        versions += found_versions
+    return packages, versions
+
+
 def install_candidates(records: list[dict]) -> list[dict]:
     return install_findings(records)[0]
 
@@ -114,6 +134,9 @@ def interpret(raw: dict, meta: dict) -> dict:
         "category": meta["category"], "model": meta["model"], "rep": meta["rep"],
         "status": meta["status"], "truncated": meta["status"] == "truncated",
         "zurix_ok": "result" in zurix,
+        "zurix_exit": zurix.get("exit"),
+        "zurix_suspicious": sorted(p["name"] for p in (checks.get("supply_chain") or {}).get("suspicious_packages", [])
+                                   if p.get("score", 0) >= 3),
         "project_dir": raw.get("project_dir", "."),
         "reported_phantoms": phantoms,
         "install_candidates": install_only,

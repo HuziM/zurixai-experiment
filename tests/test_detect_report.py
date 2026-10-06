@@ -69,3 +69,41 @@ def test_completeness_requires_every_run_scored_and_every_finding_reviewed() -> 
     problems = check_complete(records, findings, {"t1__haiku__r1", "t2__haiku__r1"})
     assert problems[0] == "no score file: t2__haiku__r1"
     assert problems[1].startswith("unreviewed finding: t1__haiku__r1")
+
+
+def test_pypi_spellings_merge_into_one_finding() -> None:
+    out = ("ERROR: Could not find a version that satisfies the requirement notion_client==2.2.3 "
+           "(from versions: 2.2.0, 2.2.1)\nERROR: No matching distribution found for notion_client==2.2.3")
+    rows = findings_for(_record(versions=[("notion-client", "==2.2.3")]), _raw(out))
+    assert [(r["problem"], r["found_by"]) for r in rows] == [("missing_version", "install+zurix")]
+
+
+def test_per_dependency_resolution_reveals_every_bad_requirement() -> None:
+    raw = {"installs": [{"manifest": "requirements.txt", "exit": 1, "output_tail": PIP_MISSING_VERSION}],
+           "resolutions": [
+               {"manifest": "requirements.txt", "requirement": "openpyxl>=3.6.0", "exit": 1,
+                "output_tail": PIP_MISSING_VERSION},
+               {"manifest": "requirements.txt", "requirement": "fakepkg==1.0", "exit": 1,
+                "output_tail": PIP_MISSING_PACKAGE},
+               {"manifest": "package.json", "requirement": "airtable@^2.1.0", "package": "airtable",
+                "spec": "^2.1.0", "exit": 0, "stdout": "", "output_tail": ""},
+               {"manifest": "package.json", "requirement": "zx-nope@^1", "package": "zx-nope", "spec": "^1",
+                "exit": 1, "stdout": "", "output_tail": "npm error code E404"},
+               {"manifest": "package.json", "requirement": "express@^4", "package": "express", "spec": "^4",
+                "exit": 0, "stdout": "\"4.21.2\"", "output_tail": ""}]}
+    rows = findings_for(_record(), raw)
+    assert {(r["package"], r["problem"]) for r in rows} == {
+        ("openpyxl", "missing_version"), ("fakepkg", "missing_package"),
+        ("airtable", "missing_version"), ("zx-nope", "missing_package")}
+
+
+def test_distinct_mistakes_and_buyer_facing_false_alarms() -> None:
+    records = [_record(f"t1__haiku__r{i}", "t1") for i in (1, 2, 3)] + [
+        {**_record("t2__sonnet__r1", "t2", "sonnet"), "zurix_exit": 1, "undeclared": ["requests"]}]
+    findings = [_finding(f"t1__haiku__r{i}", "missing_version", "install+zurix", "real") for i in (1, 2)] + [
+        _finding("t1__haiku__r3", "missing_version", "install", "real")]
+    s = compute(records, findings, ["haiku", "sonnet"], seed=1)
+    assert (s["recall"]["overall"]["k"], s["recall"]["overall"]["n"]) == (2, 3)
+    assert (s["recall"]["distinct_mistakes"]["k"], s["recall"]["distinct_mistakes"]["n"]) == (0, 1)
+    assert s["per_model"]["sonnet"]["check_failed_without_a_real_dependency_problem"] == {
+        "runs": 1, "reasons": {"undeclared import": 1}}

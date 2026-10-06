@@ -31,3 +31,8 @@ Changes made after tag `prereg-v1`, with date and reason. Empty means the run fo
 - 2026-10-06, same change: if 3 runs in a row cannot reach the API, the run stops and the loop
   tries again every 15 minutes, instead of using up the remaining runs during an outage.
   Operational only.
+- 2026-10-07, after all experiment 1 results were final: the harness was extended for experiment 2
+  (an experiment can live in its own folder via `ZX_EXPERIMENT`; per-model repeat counts; scores
+  record `zurix` 0.4 version findings, the `zurix` exit code and per-dependency resolutions). With
+  `ZX_EXPERIMENT` unset it behaves as before: `python -m harness.report` regenerates experiment 1's
+  `results/` byte-for-byte.

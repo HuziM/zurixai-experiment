@@ -43,10 +43,14 @@ does each model ship such problems?
 
 ## Ground truth and definitions
 
-For each run, a clean install of the shipped manifest in a fresh container (`pip install -r` /
-`pip install .` / `npm install --ignore-scripts`), independent of `zurix`. Every problem reported by
-`zurix` or by the install becomes a **finding** (one run × package × problem) in
-`exp2/review/findings.csv`:
+For each run, two signals independent of `zurix`, both from the package managers' own resolvers in a
+fresh container: a clean install of the shipped manifest (`pip install -r` / `pip install .` /
+`npm install --ignore-scripts`), and a per-dependency resolution of every declared requirement on
+its own (`pip install --dry-run --no-deps "<requirement>"`, `npm view "<package>@<range>" version`),
+because a full install stops at the first failure and would hide a second bad requirement. Every
+problem reported by `zurix` or by these signals becomes a **finding** (one run × package × problem)
+in `exp2/review/findings.csv`; PyPI names are merged by their normalized form (`notion_client` =
+`notion-client`):
 
 - `missing_package`: the package does not exist on its registry.
 - `missing_version`: the package exists, but no published release satisfies the declared version
@@ -58,8 +62,9 @@ A person records a verdict and date for every finding:
 
 - `real` (dependency problem): `missing_package` when the name and its normalized spellings return
   "not found" on pypi.org / npmjs.com on the review date and it isn't local, built-in, or a
-  path/git/URL dependency; `missing_version` when the registry's release list (including yanked
-  releases, noted) has no version satisfying the declared constraint.
+  path/git/URL dependency; `missing_version` when no release satisfies the declared constraint the
+  way the package manager would apply it (pip: a yanked release satisfies only an exact `==`/`===`
+  pin, never a range, per PEP 592).
 - `false_alarm`: `zurix` flagged it, but the package or a satisfying version exists, or it isn't a
   registry dependency.
 - `not_dependency`: an install failure not caused by a missing package or version.
@@ -67,8 +72,11 @@ A person records a verdict and date for every finding:
 ## Metrics
 
 Primary:
-- **Recall**: of the `real` `missing_package` / `missing_version` findings that the clean install
-  revealed, the share `zurix` also flagged; overall and per problem type, 95% Wilson interval.
+- **Recall**: of the `real` `missing_package` / `missing_version` findings that the independent
+  signals revealed, the share `zurix` also flagged; overall and per problem type. Repeats of a task
+  often repeat the same mistake, so recall is also reported over distinct mistakes (task, package,
+  problem, spec; caught only if flagged every time it appeared), and the overall interval is a 95%
+  bootstrap over tasks (10,000 draws, seed `20261007`) alongside the Wilson interval.
   Problems only `zurix` can see (an imported package that is missing from both the manifest and the
   registry) are reported separately, because no independent signal exists for them.
 - **Precision**: of every `zurix` flag (phantom packages and versions that don't exist), the share
@@ -78,6 +86,9 @@ Secondary:
 - Per model: runs with at least one `real` dependency problem (95% bootstrap over tasks), runs `zurix`
   flagged, and runs it flagged without a real problem (false-alarm runs; the Sonnet control's number
   is the main false-alarm measure).
+- What a buyer sees: runs where `zurix check` failed (exit 1) without a real dependency problem, per
+  model, with the reasons (undeclared import, suspicious package, …), since any critical finding
+  fails a PR.
 - Count of `other_install_failure` runs (not something `zurix` claims to catch).
 
 ## What may be quoted
@@ -97,6 +108,7 @@ labelled exploratory.
 ## Pilot
 
 None: the harness, environment and scoring are the ones from experiment 1, already exercised on 270
-runs. The new parts (version findings, detection metrics) are covered by unit tests and by a
-development check on experiment 1's data (12 of 12 runs with nonexistent versions flagged, none of
-the other 258), which is not part of this experiment's results.
+runs. The new parts are covered by unit tests and two checks on experiment 1's data, neither part of
+this experiment's results: `zurix` 0.4.0's version check flags the 12 Haiku runs whose install
+failed on a nonexistent version and none of the other 258; and `detect_report` run on experiment 1
+(`zurix` 0.3.0) gives the known answer, 1 of 13 install-breaking problems caught.

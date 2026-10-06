@@ -13,6 +13,7 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import tomllib
 from pathlib import Path
 
 WORK = Path("/home/scorer/work")
@@ -74,6 +75,70 @@ def _installs(work: Path) -> list[dict]:
     return records
 
 
+RESOLVE_TIMEOUT_S = 120
+
+
+def _python_requirements(work: Path) -> list[tuple[str, str]]:
+    """(manifest, requirement) for every requirement line, skipping includes, editables and URLs."""
+    reqs = []
+    req_file = work / "requirements.txt"
+    if req_file.is_file():
+        for line in req_file.read_text(errors="replace").splitlines():
+            line = line.split(" #", 1)[0].strip()
+            if not line or line.startswith(("#", "-", ".", "/")) or "://" in line or line.startswith(("git+", "hg+")):
+                continue
+            reqs.append(("requirements.txt", line))
+    pyproject = work / "pyproject.toml"
+    if pyproject.is_file():
+        try:
+            deps = tomllib.loads(pyproject.read_text(errors="replace")).get("project", {}).get("dependencies") or []
+        except tomllib.TOMLDecodeError:
+            deps = []
+        reqs += [("pyproject.toml", d) for d in deps if isinstance(d, str) and "://" not in d]
+    return reqs
+
+
+def _npm_dependencies(work: Path) -> list[tuple[str, str]]:
+    package_json = work / "package.json"
+    if not package_json.is_file():
+        return []
+    try:
+        data = json.loads(package_json.read_text(errors="replace"))
+    except json.JSONDecodeError:
+        return []
+    deps = []
+    for field in ("dependencies", "devDependencies"):
+        for name, rng in (data.get(field) or {}).items():
+            if isinstance(rng, str) and ":" not in rng and "/" not in rng:
+                deps.append((name, rng.strip() or "*"))
+    return deps
+
+
+def _resolutions(work: Path) -> list[dict]:
+    """Resolve each declared dependency on its own with pip's and npm's own resolvers, so one bad
+    requirement can't hide another (a full install stops at the first failure)."""
+    records = []
+    reqs = _python_requirements(work)
+    if reqs:
+        venv = Path("/tmp/venv-resolve")
+        subprocess.run([sys.executable, "-m", "venv", str(venv)], check=True)
+        for manifest, req in reqs:
+            records.append({"manifest": manifest, "requirement": req,
+                            **_run([str(venv / "bin/pip"), "install", "--dry-run", "--no-deps",
+                                    "--ignore-installed", req], work, RESOLVE_TIMEOUT_S)})
+    for name, rng in _npm_dependencies(work):
+        try:
+            proc = subprocess.run(["npm", "view", f"{name}@{rng}", "version", "--json"], cwd=work,
+                                  capture_output=True, text=True, timeout=RESOLVE_TIMEOUT_S, check=False)
+            records.append({"manifest": "package.json", "requirement": f"{name}@{rng}", "package": name,
+                            "spec": rng, "cmd": f"npm view {name}@{rng} version --json", "exit": proc.returncode,
+                            "stdout": proc.stdout[-TAIL:], "output_tail": (proc.stdout + proc.stderr)[-TAIL:]})
+        except subprocess.TimeoutExpired:
+            records.append({"manifest": "package.json", "requirement": f"{name}@{rng}", "package": name,
+                            "spec": rng, "exit": None, "stdout": "", "output_tail": "timeout"})
+    return records
+
+
 def main() -> None:
     WORK.mkdir(parents=True)
     with tarfile.open("/in/workspace.tar.gz") as tar:
@@ -83,6 +148,7 @@ def main() -> None:
     install_dir = Path("/home/scorer/install")
     shutil.copytree(project, install_dir)
     raw["installs"] = _installs(install_dir)
+    raw["resolutions"] = _resolutions(project)
     Path("/out/score_raw.json").write_text(json.dumps(raw, indent=2))
 
 
