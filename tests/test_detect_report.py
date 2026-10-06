@@ -85,10 +85,13 @@ def test_per_dependency_resolution_reveals_every_bad_requirement() -> None:
                 "output_tail": PIP_MISSING_VERSION},
                {"manifest": "requirements.txt", "requirement": "fakepkg==1.0", "exit": 1,
                 "output_tail": PIP_MISSING_PACKAGE},
+               # Real npm view output (npm 10): a bad range on a real package, and a missing package.
                {"manifest": "package.json", "requirement": "airtable@^2.1.0", "package": "airtable",
-                "spec": "^2.1.0", "exit": 0, "stdout": "", "output_tail": ""},
+                "spec": "^2.1.0", "exit": 1, "stdout": "",
+                "output_tail": "npm error code E404\nnpm error 404 No match found for version ^2.1.0"},
                {"manifest": "package.json", "requirement": "zx-nope@^1", "package": "zx-nope", "spec": "^1",
-                "exit": 1, "stdout": "", "output_tail": "npm error code E404"},
+                "exit": 1, "stdout": "", "output_tail": "npm error code E404\nnpm error 404 Not Found - GET "
+                "https://registry.npmjs.org/zx-nope - Not found"},
                {"manifest": "package.json", "requirement": "express@^4", "package": "express", "spec": "^4",
                 "exit": 0, "stdout": "\"4.21.2\"", "output_tail": ""}]}
     rows = findings_for(_record(), raw)

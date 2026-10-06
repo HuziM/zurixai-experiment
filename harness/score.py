@@ -75,10 +75,13 @@ def resolution_findings(resolutions: list[dict]) -> tuple[list[dict], list[dict]
     for r in resolutions:
         if r.get("manifest") == "package.json":
             text = r.get("output_tail") or ""
-            if r.get("exit") not in (0, None) and ("E404" in text or "404 Not Found" in text):
-                packages.append({"package": r["package"], "registry": "npm"})
-            elif r.get("exit") == 0 and (r.get("stdout") or "").strip() in ("", "[]"):
+            # npm view: a real package with no matching release says "No match found for version";
+            # a package that doesn't exist says "404 Not Found - GET https://registry.npmjs.org/…".
+            if "No match found for version" in text or (
+                    r.get("exit") == 0 and (r.get("stdout") or "").strip() in ("", "[]")):
                 versions.append({"package": r["package"], "registry": "npm", "requested": r["spec"]})
+            elif "Not Found - GET https://registry.npmjs.org/" in text:
+                packages.append({"package": r["package"], "registry": "npm"})
             continue
         if r.get("exit") == 0:
             continue
