@@ -64,6 +64,11 @@ FACTS = {"has_result": True, "budget_hit": False}
     (0, FACTS, [], "no_code"),
     (1, {"has_result": True, "budget_hit": False, "api_error_status": 401}, [], "infra_failed"),
     (1, {"has_result": True, "budget_hit": False, "api_error_status": 529}, ["main.py"], "infra_failed"),
+    (1, {"has_result": True, "budget_hit": False, "is_error": True,
+         "error_message": "API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)"},
+     [], "infra_failed"),
+    (1, {"has_result": True, "budget_hit": False, "is_error": True, "error_message": "Task failed"},
+     [], "no_code"),
 ])
 def test_classify(exit_code, facts, files, status) -> None:
     assert classify(exit_code, facts, files) == status
@@ -268,6 +273,8 @@ def test_zero_result_reports_a_task_level_upper_bound() -> None:
     ({"status": "infra_failed", "api_error_status": 429}, True),
     ({"status": "infra_failed", "api_error_status": 500}, False),
     ({"status": "infra_failed", "api_error_status": None}, False),
+    ({"status": "infra_failed", "api_error_status": None,
+      "error_message": "API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)"}, True),
 ])
 def test_needs_run(meta, expected) -> None:
     from harness.run import needs_run

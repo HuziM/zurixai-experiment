@@ -27,6 +27,19 @@ from harness.common import ROOT, Run, full_prompt, load_config, load_tasks, plan
 from harness.transcript import read_events, source_files, summarize
 
 FINISHED = {"done", "truncated", "no_code"}
+_UNREACHABLE = ("Can't reach the API server", "ENOTFOUND", "ECONNREFUSED", "ECONNRESET", "ETIMEDOUT",
+                "EAI_AGAIN", "Connection error")
+
+
+def api_error(facts: dict) -> bool:
+    """The session ended on an API error: a status code, or an "API Error: ..." result (e.g. DNS)."""
+    message = facts.get("error_message") or ""
+    return bool(facts.get("api_error_status")) or (bool(facts.get("is_error")) and message.startswith("API Error"))
+
+
+def unreachable(meta: dict) -> bool:
+    message = meta.get("error_message") or ""
+    return any(marker in message for marker in _UNREACHABLE)
 RETRY_LATER = {429, 500, 502, 503, 504, 529}
 BACKOFF_S = 60
 STOP_AFTER_RATE_LIMITED = 3
@@ -34,7 +47,7 @@ STOP_AFTER_RATE_LIMITED = 3
 
 def classify(exit_code: int | None, facts: dict, files: list[str]) -> str:
     """Status of one attempt. infra_failed attempts are retried from scratch; the others are final."""
-    if facts.get("api_error_status") or (not facts["has_result"] and not files):
+    if api_error(facts) or (not facts["has_result"] and not files):
         return "infra_failed"
     timed_out = exit_code in (124, 137) or exit_code is None
     if not files:
@@ -48,14 +61,16 @@ def needs_run(meta: dict | None) -> bool:
     """Whether a run still has to be (re)run.
 
     Finished runs never rerun. An infrastructure failure already had its pre-registered retries,
-    so it stays excluded, except a usage/rate limit (429): those runs never actually ran and are
-    run again once the limit resets.
+    so it stays excluded, except when the model was never reached: a usage/rate limit (429) or an
+    unreachable API (network/DNS). Those are run again once the limit resets or the network is back.
     """
     if meta is None:
         return True
     if meta.get("status") in FINISHED:
         return False
-    return meta.get("status") != "infra_failed" or meta.get("api_error_status") == 429
+    if meta.get("status") != "infra_failed":
+        return True
+    return meta.get("api_error_status") == 429 or unreachable(meta)
 
 
 def read_meta(run_dir: Path) -> dict | None:
