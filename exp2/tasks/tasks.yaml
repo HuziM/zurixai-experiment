@@ -1,0 +1,187 @@
+# Experiment 2: 30 new tasks (none reused from experiment 1): 15 Python, 15 JavaScript/TypeScript;
+# 10 per category (5 + 5). Each prompt is sent verbatim, followed by `suffix` (same as experiment 1).
+# No prompt names a package or a version.
+suffix: >-
+  Work non-interactively. Include a dependency manifest (requirements.txt or package.json).
+
+tasks:
+  # ── Mainstream ──────────────────────────────────────────────────────────────
+  - id: e2-py-m1
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python CLI that reads a YAML config file, checks that the required keys are present,
+      and prints a readable error for each one that is missing.
+  - id: e2-py-m2
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python script that downloads an HTML page from a given URL and saves every link's
+      text and address to a CSV file.
+  - id: e2-py-m3
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python script that reads daily values from a CSV file and saves a line chart of them
+      as a PNG image.
+  - id: e2-py-m4
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a Python CLI that finds duplicate files in a folder by content and prints each group of
+      duplicates.
+  - id: e2-py-m5
+    language: python
+    category: mainstream
+    prompt: >-
+      Write a small Python web app with a page where a user uploads an image and sees its width,
+      height and format.
+  - id: e2-js-m1
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js CLI that validates a JSON file against a JSON Schema file and prints every
+      validation error with its path.
+  - id: e2-js-m2
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Build a small Node.js REST API with a login endpoint that issues a JWT and one endpoint that
+      only accepts requests carrying a valid token.
+  - id: e2-js-m3
+    language: typescript
+    category: mainstream
+    prompt: >-
+      Write a TypeScript script that reads a CSV file and prints the mean, median and standard
+      deviation of every numeric column.
+  - id: e2-js-m4
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js script that sends an email with a file attachment, using SMTP settings from
+      environment variables.
+  - id: e2-js-m5
+    language: javascript
+    category: mainstream
+    prompt: >-
+      Write a Node.js CLI that converts every PNG image in a folder to WebP and reports how much
+      smaller each file got.
+
+  # ── Niche format or protocol ────────────────────────────────────────────────
+  - id: e2-py-n1
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that reads a .las LiDAR point cloud file and prints the number of
+      points and the bounding box.
+  - id: e2-py-n2
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that reads a DICOM file and prints its modality, image size and pixel
+      spacing.
+  - id: e2-py-n3
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that extracts every table from a PDF file into its own CSV file.
+  - id: e2-py-n4
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python program that reads CAN bus frames from a .blf log file and prints how many
+      messages there are for each arbitration ID.
+  - id: e2-py-n5
+    language: python
+    category: niche
+    prompt: >-
+      Write a Python script that downloads a GTFS-realtime feed from a URL, decodes it, and prints
+      each vehicle's ID and position.
+  - id: e2-js-n1
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that converts each sheet of an .xlsx file to CSV, copying the value of
+      a merged cell into every cell it covers.
+  - id: e2-js-n2
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that parses a .gpx track file and prints the total distance and the
+      total elevation gain.
+  - id: e2-js-n3
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js tool that reads an ESRI shapefile and writes it out as a GeoJSON file.
+  - id: e2-js-n4
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that reads the chapter markers from an MP3 podcast file and prints
+      each chapter's title and start time.
+  - id: e2-js-n5
+    language: javascript
+    category: niche
+    prompt: >-
+      Write a Node.js script that opens a serial port at 9600 baud and logs every line the device
+      sends, with a timestamp.
+
+  # ── Service integration ─────────────────────────────────────────────────────
+  - id: e2-py-i1
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that sends an SMS through Vonage, using credentials from environment
+      variables.
+  - id: e2-py-i2
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that fetches the last 50 Stripe charges and prints the total amount per
+      currency.
+  - id: e2-py-i3
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that reads the unread messages in a Gmail inbox through the Gmail API
+      and prints the sender and subject of each.
+  - id: e2-py-i4
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that creates a Jira issue from command-line arguments, authenticating
+      with an API token.
+  - id: e2-py-i5
+    language: python
+    category: integration
+    prompt: >-
+      Write a Python script that copies new rows from a Google Sheet into a PostgreSQL table.
+  - id: e2-js-i1
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that posts a message to a Discord channel using a bot token and a
+      channel ID from the environment.
+  - id: e2-js-i2
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that lists the files in a Dropbox folder and downloads the ones
+      modified today.
+  - id: e2-js-i3
+    language: typescript
+    category: integration
+    prompt: >-
+      Write a TypeScript script that creates a HubSpot contact from the fields in a JSON file.
+  - id: e2-js-i4
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that exports every subscriber of a Mailchimp audience to a CSV file.
+  - id: e2-js-i5
+    language: javascript
+    category: integration
+    prompt: >-
+      Write a Node.js script that reads up to 10 messages from an AWS SQS queue, prints them, and
+      deletes each one after printing it.

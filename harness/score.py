@@ -18,7 +18,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from harness.common import ROOT, load_config
+from harness.common import BASE, load_config
 
 SCORED_STATUSES = {"done", "truncated"}
 REVIEW_FIELDS = ["run_id", "package", "registry", "kind", "found_by", "registry_url", "verdict",
@@ -119,6 +119,9 @@ def interpret(raw: dict, meta: dict) -> dict:
         "install_candidates": install_only,
         "missing_versions": missing_versions,
         "undeclared": sorted(p["package"] for p in imports.get("undeclared", [])),
+        # zurix >= 0.4: declared versions/ranges that no published release satisfies.
+        "zurix_version_not_found": [{"package": v["name"], "registry": v["source"], "spec": v["spec"]}
+                                    for v in (checks.get("supply_chain") or {}).get("version_not_found", [])],
         "unverified": sorted(set(unverified)),
         "install": install,
         "install_records": [{k: r.get(k) for k in ("manifest", "cmd", "exit")} for r in records],
@@ -197,9 +200,9 @@ def update_review(scores: Path, review_csv: Path) -> int:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--runs", type=Path, default=ROOT / "runs")
-    parser.add_argument("--scores", type=Path, default=ROOT / "scores")
-    parser.add_argument("--review-csv", type=Path, default=ROOT / "review" / "phantoms.csv")
+    parser.add_argument("--runs", type=Path, default=BASE / "runs")
+    parser.add_argument("--scores", type=Path, default=BASE / "scores")
+    parser.add_argument("--review-csv", type=Path, default=BASE / "review" / "phantoms.csv")
     parser.add_argument("--review", action="store_true", help="only update the hand-check log")
     args = parser.parse_args(argv)
 

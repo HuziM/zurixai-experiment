@@ -16,7 +16,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from harness.common import ROOT, load_config, load_tasks, plan_runs
+from harness.common import BASE, load_config, load_tasks, plan_runs
 
 Z95 = 1.959963984540054
 BOOTSTRAP_DRAWS = 10_000
@@ -232,9 +232,9 @@ def render_markdown(summary: dict, draft: bool) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--scores", type=Path, default=ROOT / "scores")
-    parser.add_argument("--review-csv", type=Path, default=ROOT / "review" / "phantoms.csv")
-    parser.add_argument("--out", type=Path, default=ROOT / "results")
+    parser.add_argument("--scores", type=Path, default=BASE / "scores")
+    parser.add_argument("--review-csv", type=Path, default=BASE / "review" / "phantoms.csv")
+    parser.add_argument("--out", type=Path, default=BASE / "results")
     parser.add_argument("--draft", action="store_true")
     args = parser.parse_args(argv)
 

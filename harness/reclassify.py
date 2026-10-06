@@ -15,13 +15,13 @@ import sys
 from datetime import UTC, datetime
 from pathlib import Path
 
-from harness.common import ROOT
+from harness.common import BASE
 from harness.run import classify
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--runs", type=Path, default=ROOT / "runs")
+    parser.add_argument("--runs", type=Path, default=BASE / "runs")
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args(argv)
     changed = 0

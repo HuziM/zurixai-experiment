@@ -23,7 +23,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
 from pathlib import Path
 
-from harness.common import ROOT, Run, full_prompt, load_config, load_tasks, plan_runs
+from harness.common import BASE, Run, full_prompt, load_config, load_tasks, plan_runs
 from harness.transcript import read_events, source_files, summarize
 
 FINISHED = {"done", "truncated", "no_code"}
@@ -147,7 +147,7 @@ def execute(run: Run, out: Path, cfg: dict, suffix: str) -> dict:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--out", type=Path, default=ROOT / "runs")
+    parser.add_argument("--out", type=Path, default=BASE / "runs")
     parser.add_argument("--tasks", help="comma-separated task ids (default: all)")
     parser.add_argument("--reps", type=int)
     parser.add_argument("--concurrency", type=int, help="override experiment.yaml (use 1 on a subscription)")
