@@ -1,0 +1,29 @@
+{
+  "run_id": "py-m5__claude-sonnet-5-5__r1",
+  "task": "py-m5",
+  "language": "python",
+  "category": "mainstream",
+  "model": "claude-sonnet-5-5",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": true,
+  "ran_code": true,
+  "cost_usd": 0.04657580000000001,
+  "num_turns": 4
+}

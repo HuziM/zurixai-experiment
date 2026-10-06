@@ -1,0 +1,67 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "notion-client": {
+              "status": "ok",
+              "latest_version": "3.1.0",
+              "last_release": "2026-05-12T08:54:43.135073Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.47
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting notion-client==2.2.1 (from -r requirements.txt (line 1))\n  Downloading notion_client-2.2.1-py2.py3-none-any.whl.metadata (11 kB)\nCollecting httpx>=0.15.0 (from notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)\nCollecting anyio (from httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)\nCollecting certifi (from httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nCollecting httpcore==1.* (from httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)\nCollecting idna (from httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\nCollecting h11>=0.16 (from httpcore==1.*->httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\nCollecting typing_extensions>=4.16.0 (from anyio->httpx>=0.15.0->notion-client==2.2.1->-r requirements.txt (line 1))\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nDownloading notion_client-2.2.1-py2.py3-none-any.whl (13 kB)\nDownloading httpx-0.28.1-py3-none-any.whl (73 kB)\nDownloading httpcore-1.0.9-py3-none-any.whl (78 kB)\nDownloading anyio-4.15.1-py3-none-any.whl (132 kB)\nDownloading idna-3.20-py3-none-any.whl (69 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nDownloading h11-0.16.0-py3-none-any.whl (37 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nInstalling collected packages: typing_extensions, idna, h11, certifi, httpcore, anyio, httpx, notion-client\nSuccessfully installed anyio-4.15.1 certifi-2026.7.22 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 notion-client-2.2.1 typing_extensions-4.16.0\n"
+    }
+  ]
+}

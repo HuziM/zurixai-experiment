@@ -1,0 +1,290 @@
+{
+  "primary": {
+    "overall": {
+      "k": 1,
+      "n": 270,
+      "pct": 0.4,
+      "ci95_task_bootstrap": [
+        0.0,
+        1.1
+      ]
+    },
+    "by_category": {
+      "integration": {
+        "k": 1,
+        "n": 90,
+        "pct": 1.1,
+        "ci95_task_bootstrap": [
+          0.0,
+          3.3
+        ]
+      },
+      "mainstream": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0,
+        "ci95_task_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "zero_upper95_wilson_over_tasks": 27.8
+      },
+      "niche": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0,
+        "ci95_task_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "zero_upper95_wilson_over_tasks": 27.8
+      }
+    },
+    "by_model": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0,
+        "ci95_wilson": [
+          0.0,
+          4.1
+        ],
+        "zero_upper95_wilson_over_tasks": 11.4,
+        "by_category": {
+          "integration": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          }
+        }
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0,
+        "ci95_wilson": [
+          0.0,
+          4.1
+        ],
+        "zero_upper95_wilson_over_tasks": 11.4,
+        "by_category": {
+          "integration": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          }
+        }
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 1,
+        "n": 90,
+        "pct": 1.1,
+        "ci95_wilson": [
+          0.2,
+          6.0
+        ],
+        "by_category": {
+          "integration": {
+            "k": 1,
+            "n": 30,
+            "pct": 3.3
+          },
+          "mainstream": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          },
+          "niche": {
+            "k": 0,
+            "n": 30,
+            "pct": 0.0
+          }
+        }
+      }
+    }
+  },
+  "tasks_with_phantom": {
+    "overall": 1,
+    "of": 30,
+    "by_model": {
+      "claude-opus-5-5": 0,
+      "claude-sonnet-5-5": 0,
+      "claude-haiku-4-5-20251001": 1
+    }
+  },
+  "secondary": {
+    "undeclared_import": {
+      "claude-opus-5-5": {
+        "k": 1,
+        "n": 90,
+        "pct": 1.1
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 0,
+        "n": 90,
+        "pct": 0.0
+      }
+    },
+    "pinned_version_that_does_not_exist": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "n": 90,
+        "examples": []
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "n": 90,
+        "examples": []
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 12,
+        "n": 90,
+        "examples": [
+          "airtable^2.1.0",
+          "b2sdk==1.26.1",
+          "dbf^0.11.4",
+          "dbf^1.1.0",
+          "notion-client==2.2.2",
+          "notion-client==2.2.3",
+          "openpyxl==3.10.10",
+          "openpyxl>=3.10.0",
+          "openpyxl>=3.6.0",
+          "pdpyras==7.1.2"
+        ]
+      }
+    },
+    "install_fails": {
+      "claude-opus-5-5": {
+        "k": 0,
+        "no_manifest": 0,
+        "n": 90
+      },
+      "claude-sonnet-5-5": {
+        "k": 0,
+        "no_manifest": 0,
+        "n": 90
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 13,
+        "no_manifest": 0,
+        "n": 90
+      }
+    },
+    "never_ran_install": {
+      "claude-opus-5-5": {
+        "k": 28,
+        "n": 90
+      },
+      "claude-sonnet-5-5": {
+        "k": 66,
+        "n": 90
+      },
+      "claude-haiku-4-5-20251001": {
+        "k": 74,
+        "n": 90
+      }
+    },
+    "detector_precision": {
+      "reported": 1,
+      "confirmed": 1,
+      "pct": 100.0
+    },
+    "detector_recall": {
+      "confirmed_total": 1,
+      "found_by_zurix": 1,
+      "pct": 100.0
+    },
+    "phantom_kinds": {
+      "not_in_manifest": 0,
+      "in_manifest": 1,
+      "install_not_found": 0
+    },
+    "per_task_consistency": {
+      "claude-opus-5-5": {
+        "0": 30
+      },
+      "claude-sonnet-5-5": {
+        "0": 30
+      },
+      "claude-haiku-4-5-20251001": {
+        "0": 29,
+        "1": 1
+      }
+    },
+    "cost_and_turns": {
+      "claude-opus-5-5": {
+        "total_usd": 16.43,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.156,
+        "median_turns": 5.0
+      },
+      "claude-sonnet-5-5": {
+        "total_usd": 3.81,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.041,
+        "median_turns": 3.0
+      },
+      "claude-haiku-4-5-20251001": {
+        "total_usd": 3.58,
+        "runs_without_cost_record": 0,
+        "median_usd": 0.03,
+        "median_turns": 4.0
+      }
+    }
+  },
+  "run_status": {
+    "claude-opus-5-5": {
+      "done": 90
+    },
+    "claude-sonnet-5-5": {
+      "done": 90
+    },
+    "claude-haiku-4-5-20251001": {
+      "done": 90
+    }
+  },
+  "truncation_rate": {
+    "claude-opus-5-5": {
+      "k": 0,
+      "n": 90,
+      "pct": 0.0
+    },
+    "claude-sonnet-5-5": {
+      "k": 0,
+      "n": 90,
+      "pct": 0.0
+    },
+    "claude-haiku-4-5-20251001": {
+      "k": 0,
+      "n": 90,
+      "pct": 0.0
+    }
+  },
+  "unreviewed_phantoms": 0,
+  "completeness_problems": []
+}

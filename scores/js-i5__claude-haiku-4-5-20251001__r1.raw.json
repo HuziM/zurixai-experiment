@@ -1,0 +1,95 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 5,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "twilio": {
+              "status": "ok",
+              "latest_version": "6.1.2",
+              "last_modified": "2026-09-28T10:11:26.834Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "dotenv": {
+              "status": "ok",
+              "latest_version": "18.0.5",
+              "last_modified": "2026-09-30T15:50:19.250Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "typescript": {
+              "status": "ok",
+              "latest_version": "7.0.2",
+              "last_modified": "2026-10-06T08:21:26.566Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "ts-node": {
+              "status": "ok",
+              "latest_version": "10.9.2",
+              "last_modified": "2025-10-13T23:43:21.909Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "@types/node": {
+              "status": "ok",
+              "latest_version": "26.6.4",
+              "last_modified": "2026-10-01T22:39:33.908Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.95
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0,
+      "output_tail": "\nadded 76 packages in 27s\nnpm warn deprecated scmp@2.1.0: Just use Node.js's crypto.timingSafeEqual()\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+    }
+  ]
+}

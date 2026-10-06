@@ -1,0 +1,67 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "fitparse": {
+              "status": "ok",
+              "latest_version": "1.2.0",
+              "last_release": "2020-09-07T03:27:21.926221Z",
+              "is_deprecated": false,
+              "is_unmaintained": true
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.38
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting fitparse>=1.2.0 (from -r requirements.txt (line 1))\n  Downloading fitparse-1.2.0.tar.gz (65 kB)\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: fitparse\n  Building wheel for fitparse (pyproject.toml): started\n  Building wheel for fitparse (pyproject.toml): finished with status 'done'\n  Created wheel for fitparse: filename=fitparse-1.2.0-py3-none-any.whl size=68275 sha256=bd144422e243068f097077fd6fdc1137fad20da4a2a762f31b7291e084b53356\n  Stored in directory: /home/scorer/.cache/pip/wheels/70/74/f4/07ba357f689c8c76c09a5c6c399831b0cb3452dcc7703f304c\nSuccessfully built fitparse\nInstalling collected packages: fitparse\nSuccessfully installed fitparse-1.2.0\n"
+    }
+  ]
+}

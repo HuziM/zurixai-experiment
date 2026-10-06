@@ -1,0 +1,29 @@
+{
+  "run_id": "py-i4__claude-opus-5-5__r1",
+  "task": "py-i4",
+  "language": "python",
+  "category": "integration",
+  "model": "claude-opus-5-5",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": true,
+  "ran_code": true,
+  "cost_usd": 0.09401319999999999,
+  "num_turns": 5
+}

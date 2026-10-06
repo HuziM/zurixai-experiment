@@ -1,0 +1,74 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "pdpyras": {
+              "status": "ok",
+              "latest_version": "5.4.1",
+              "last_release": "2025-06-03T21:41:16.166019Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "python-dateutil": {
+              "status": "ok",
+              "latest_version": "2.9.0.post0",
+              "last_release": "2024-03-01T18:36:18.570437Z",
+              "is_deprecated": false,
+              "is_unmaintained": true
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.44
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "ERROR: Ignored the following yanked versions: 4.5.1, 5.0.0\nERROR: Could not find a version that satisfies the requirement pdpyras==7.1.2 (from versions: 1.0.0, 1.0.1, 1.0.2, 1.0.3, 2.0.0, 2.0.1, 2.0.2, 2.1.0, 2.2.0, 2.3.0, 2.3.1, 2.3.2, 2.4, 2.4.1, 2.4.2, 3.0, 3.0.1, 3.0.2, 3.1, 3.1.1, 3.1.2, 3.2, 3.2.1, 4.0, 4.1, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 4.2.0, 4.2.1, 4.3.0, 4.4.0, 4.5.0, 4.5.2, 5.0.1, 5.0.2, 5.0.3, 5.0.4, 5.1.0, 5.1.1, 5.1.2, 5.1.3, 5.2.0, 5.3.0, 5.4.0, 5.4.1)\nERROR: No matching distribution found for pdpyras==7.1.2\n"
+    }
+  ]
+}

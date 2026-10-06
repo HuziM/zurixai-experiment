@@ -1,0 +1,29 @@
+{
+  "run_id": "js-m5__claude-sonnet-5-5__r3",
+  "task": "js-m5",
+  "language": "javascript",
+  "category": "mainstream",
+  "model": "claude-sonnet-5-5",
+  "rep": 3,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": "urldl",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": true,
+  "cost_usd": 0.0518088,
+  "num_turns": 2
+}

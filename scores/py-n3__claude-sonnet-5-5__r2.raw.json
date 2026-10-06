@@ -1,0 +1,74 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "icalendar": {
+              "status": "ok",
+              "latest_version": "7.3.0",
+              "last_release": "2026-08-19T15:10:19.525917Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "recurring-ical-events": {
+              "status": "ok",
+              "latest_version": "3.8.2",
+              "last_release": "2026-04-30T19:21:44.079770Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.42
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting icalendar>=5.0 (from -r requirements.txt (line 1))\n  Downloading icalendar-7.3.0-py3-none-any.whl.metadata (7.0 kB)\nCollecting recurring-ical-events>=2.1 (from -r requirements.txt (line 2))\n  Downloading recurring_ical_events-3.8.2-py3-none-any.whl.metadata (4.5 kB)\nCollecting python-dateutil (from icalendar>=5.0->-r requirements.txt (line 1))\n  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)\nCollecting typing-extensions~=4.10 (from icalendar>=5.0->-r requirements.txt (line 1))\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nCollecting tzdata>=2025.3 (from icalendar>=5.0->-r requirements.txt (line 1))\n  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)\nCollecting x-wr-timezone<3.0.0,>=1.0.0 (from recurring-ical-events>=2.1->-r requirements.txt (line 2))\n  Downloading x_wr_timezone-2.0.1-py3-none-any.whl.metadata (10 kB)\nCollecting six>=1.5 (from python-dateutil->icalendar>=5.0->-r requirements.txt (line 1))\n  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)\nCollecting click (from x-wr-timezone<3.0.0,>=1.0.0->recurring-ical-events>=2.1->-r requirements.txt (line 2))\n  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)\nDownloading icalendar-7.3.0-py3-none-any.whl (542 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 542.5/542.5 kB 2.2 MB/s eta 0:00:00\nDownloading recurring_ical_events-3.8.2-py3-none-any.whl (241 kB)\nDownloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nDownloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)\nDownloading x_wr_timezone-2.0.1-py3-none-any.whl (11 kB)\nDownloading six-1.17.0-py2.py3-none-any.whl (11 kB)\nDownloading click-8.5.0-py3-none-any.whl (125 kB)\nInstalling collected packages: tzdata, typing-extensions, six, click, python-dateutil, icalendar, x-wr-timezone, recurring-ical-events\nSuccessfully installed click-8.5.0 icalendar-7.3.0 python-dateutil-2.9.0.post0 recurring-ical-events-3.8.2 six-1.17.0 typing-extensions-4.16.0 tzdata-2026.5 x-wr-timezone-2.0.1\n"
+    }
+  ]
+}

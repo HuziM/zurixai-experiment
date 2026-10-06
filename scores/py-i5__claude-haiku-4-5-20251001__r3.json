@@ -1,0 +1,29 @@
+{
+  "run_id": "py-i5__claude-haiku-4-5-20251001__r3",
+  "task": "py-i5",
+  "language": "python",
+  "category": "integration",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 3,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.0277006,
+  "num_turns": 5
+}

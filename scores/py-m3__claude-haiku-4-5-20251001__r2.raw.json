@@ -1,0 +1,81 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 3,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "pydantic": {
+              "status": "ok",
+              "latest_version": "2.13.5",
+              "last_release": "2026-08-28T14:03:59.136157Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "uvicorn": {
+              "status": "ok",
+              "latest_version": "0.54.0",
+              "last_release": "2026-09-25T06:52:35.829563Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "fastapi": {
+              "status": "ok",
+              "latest_version": "0.142.2",
+              "last_release": "2026-09-30T09:51:09.800102Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.72
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting fastapi==0.104.1 (from -r requirements.txt (line 1))\n  Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)\nCollecting uvicorn==0.24.0 (from -r requirements.txt (line 2))\n  Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)\nCollecting pydantic==2.5.0 (from -r requirements.txt (line 3))\n  Downloading pydantic-2.5.0-py3-none-any.whl.metadata (174 kB)\nCollecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 1))\n  Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)\nCollecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 1))\n  Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)\nCollecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 1))\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nCollecting click>=7.0 (from uvicorn==0.24.0->-r requirements.txt (line 2))\n  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)\nCollecting h11>=0.8 (from uvicorn==0.24.0->-r requirements.txt (line 2))\n  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\nCollecting annotated-types>=0.4.0 (from pydantic==2.5.0->-r requirements.txt (line 3))\n  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)\nCollecting pydantic-core==2.14.1 (from pydantic==2.5.0->-r requirements.txt (line 3))\n  Downloading pydantic_core-2.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)\nCollecting idna>=2.8 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 1))\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\nCollecting sniffio>=1.1 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 1))\n  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)\nDownloading fastapi-0.104.1-py3-none-any.whl (92 kB)\nDownloading uvicorn-0.24.0-py3-none-any.whl (59 kB)\nDownloading pydantic-2.5.0-py3-none-any.whl (407 kB)\nDownloading pydantic_core-2.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.8 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1.8/1.8 MB 6.2 MB/s eta 0:00:00\nDownloading annotated_types-0.8.0-py3-none-any.whl (13 kB)\nDownloading anyio-3.7.1-py3-none-any.whl (80 kB)\nDownloading click-8.5.0-py3-none-any.whl (125 kB)\nDownloading h11-0.16.0-py3-none-any.whl (37 kB)\nDownloading starlette-0.27.0-py3-none-any.whl (66 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nDownloading idna-3.20-py3-none-any.whl (69 kB)\nDownloading sniffio-1.3.1-py3-none-any.whl (10 kB)\nInstalling collected packages: typing-extensions, sniffio, idna, h11, click, annotated-types, uvicorn, pydantic-core, anyio, starlette, pydantic, fastapi\nSuccessfully installed annotated-types-0.8.0 anyio-3.7.1 click-8.5.0 fastapi-0.104.1 h11-0.16.0 idna-3.20 pydantic-2.5.0 pydantic-core-2.14.1 sniffio-1.3.1 starlette-0.27.0 typing-extensions-4.16.0 uvicorn-0.24.0\n"
+    }
+  ]
+}

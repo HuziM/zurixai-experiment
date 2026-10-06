@@ -1,0 +1,79 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 1,
+          "unavailable": 0,
+          "suspicious_packages": [
+            {
+              "name": "linear-sdk",
+              "source": "pypi",
+              "score": 3,
+              "reasons": [
+                "package not found in public registry"
+              ]
+            }
+          ],
+          "details": {
+            "linear-sdk": {
+              "status": "not_found"
+            },
+            "python-dotenv": {
+              "status": "ok",
+              "latest_version": "1.2.4",
+              "last_release": "2026-10-01T05:36:08.633003Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.56
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement linear-sdk==0.12.0 (from versions: none)\nERROR: No matching distribution found for linear-sdk==0.12.0\n"
+    }
+  ]
+}

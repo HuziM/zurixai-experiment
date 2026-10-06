@@ -1,0 +1,29 @@
+{
+  "run_id": "js-m3__claude-sonnet-5-5__r3",
+  "task": "js-m3",
+  "language": "typescript",
+  "category": "mainstream",
+  "model": "claude-sonnet-5-5",
+  "rep": 3,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": "md-toc",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0
+    }
+  ],
+  "ran_install": true,
+  "ran_code": true,
+  "cost_usd": 0.064739,
+  "num_turns": 4
+}

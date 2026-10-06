@@ -1,0 +1,29 @@
+{
+  "run_id": "js-i2__claude-sonnet-5-5__r1",
+  "task": "js-i2",
+  "language": "javascript",
+  "category": "integration",
+  "model": "claude-sonnet-5-5",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.048820600000000006,
+  "num_turns": 3
+}

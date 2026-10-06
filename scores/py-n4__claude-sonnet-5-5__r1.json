@@ -1,0 +1,29 @@
+{
+  "run_id": "py-n4__claude-sonnet-5-5__r1",
+  "task": "py-n4",
+  "language": "python",
+  "category": "niche",
+  "model": "claude-sonnet-5-5",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.049706,
+  "num_turns": 3
+}

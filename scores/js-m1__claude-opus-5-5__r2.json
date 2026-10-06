@@ -1,0 +1,29 @@
+{
+  "run_id": "js-m1__claude-opus-5-5__r2",
+  "task": "js-m1",
+  "language": "javascript",
+  "category": "mainstream",
+  "model": "claude-opus-5-5",
+  "rep": 2,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": true,
+  "cost_usd": 0.13516080000000003,
+  "num_turns": 5
+}

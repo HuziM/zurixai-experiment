@@ -1,0 +1,67 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "b2sdk": {
+              "status": "ok",
+              "latest_version": "2.13.1",
+              "last_release": "2026-10-04T16:19:24.848322Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.37
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting b2sdk<3,>=2.5 (from -r requirements.txt (line 1))\n  Downloading b2sdk-2.13.1-py3-none-any.whl.metadata (3.6 kB)\nCollecting annotated-types>=0.5.0 (from b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)\nCollecting logfury<2.0.0,>=1.0.1 (from b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading logfury-1.0.1-py3-none-any.whl.metadata (5.9 kB)\nCollecting requests<3.0.0,>=2.33.0 (from b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nCollecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.33.0->b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)\nCollecting idna<4,>=2.5 (from requests<3.0.0,>=2.33.0->b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\nCollecting urllib3<3,>=1.26 (from requests<3.0.0,>=2.33.0->b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)\nCollecting certifi>=2023.5.7 (from requests<3.0.0,>=2.33.0->b2sdk<3,>=2.5->-r requirements.txt (line 1))\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nDownloading b2sdk-2.13.1-py3-none-any.whl (301 kB)\nDownloading annotated_types-0.8.0-py3-none-any.whl (13 kB)\nDownloading logfury-1.0.1-py3-none-any.whl (7.5 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nDownloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (246 kB)\nDownloading idna-3.20-py3-none-any.whl (69 kB)\nDownloading urllib3-2.8.0-py3-none-any.whl (135 kB)\nInstalling collected packages: logfury, urllib3, idna, charset_normalizer, certifi, annotated-types, requests, b2sdk\nSuccessfully installed annotated-types-0.8.0 b2sdk-2.13.1 certifi-2026.7.22 charset_normalizer-3.5.2 idna-3.20 logfury-1.0.1 requests-2.34.2 urllib3-2.8.0\n"
+    }
+  ]
+}

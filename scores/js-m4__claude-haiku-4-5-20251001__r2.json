@@ -1,0 +1,29 @@
+{
+  "run_id": "js-m4__claude-haiku-4-5-20251001__r2",
+  "task": "js-m4",
+  "language": "javascript",
+  "category": "mainstream",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 2,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0
+    }
+  ],
+  "ran_install": true,
+  "ran_code": true,
+  "cost_usd": 0.0834998,
+  "num_turns": 14
+}

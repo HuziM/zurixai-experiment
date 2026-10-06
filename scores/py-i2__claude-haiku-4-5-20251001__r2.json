@@ -1,0 +1,35 @@
+{
+  "run_id": "py-i2__claude-haiku-4-5-20251001__r2",
+  "task": "py-i2",
+  "language": "python",
+  "category": "integration",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 2,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [
+    {
+      "package": "b2sdk",
+      "registry": "pypi",
+      "requested": "==1.26.1"
+    }
+  ],
+  "undeclared": [],
+  "unverified": [],
+  "install": "fail",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.0240467,
+  "num_turns": 3
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "py-m1__claude-haiku-4-5-20251001__r1",
+  "task": "py-m1",
+  "language": "python",
+  "category": "mainstream",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": true,
+  "cost_usd": 0.0489523,
+  "num_turns": 8
+}

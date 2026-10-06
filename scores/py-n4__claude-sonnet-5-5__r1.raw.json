@@ -1,0 +1,81 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 3,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "pandas": {
+              "status": "ok",
+              "latest_version": "3.0.6",
+              "last_release": "2026-09-17T23:20:20.960376Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "pyarrow": {
+              "status": "ok",
+              "latest_version": "25.0.1",
+              "last_release": "2026-08-10T12:36:33.857237Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "fastavro": {
+              "status": "ok",
+              "latest_version": "1.13.0",
+              "last_release": "2026-10-05T22:22:44.242984Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 2.69
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting pandas>=2.0 (from -r requirements.txt (line 1))\n  Downloading pandas-3.0.6-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (79 kB)\nCollecting pyarrow>=14.0 (from -r requirements.txt (line 2))\n  Downloading pyarrow-25.0.1-cp312-cp312-manylinux_2_28_aarch64.whl.metadata (3.0 kB)\nCollecting fastavro>=1.9 (from -r requirements.txt (line 3))\n  Downloading fastavro-1.13.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (6.3 kB)\nCollecting numpy>=1.26.0 (from pandas>=2.0->-r requirements.txt (line 1))\n  Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)\nCollecting python-dateutil>=2.8.2 (from pandas>=2.0->-r requirements.txt (line 1))\n  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)\nCollecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.0->-r requirements.txt (line 1))\n  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)\nDownloading pandas-3.0.6-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (10.3 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 10.3/10.3 MB 1.4 MB/s eta 0:00:00\nDownloading pyarrow-25.0.1-cp312-cp312-manylinux_2_28_aarch64.whl (46.8 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 46.8/46.8 MB 2.1 MB/s eta 0:00:00\nDownloading fastavro-1.13.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (3.5 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 3.5/3.5 MB 2.5 MB/s eta 0:00:00\nDownloading numpy-2.5.3-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.7 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 15.7/15.7 MB 2.4 MB/s eta 0:00:00\nDownloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)\nDownloading six-1.17.0-py2.py3-none-any.whl (11 kB)\nInstalling collected packages: six, pyarrow, numpy, fastavro, python-dateutil, pandas\nSuccessfully installed fastavro-1.13.0 numpy-2.5.3 pandas-3.0.6 pyarrow-25.0.1 python-dateutil-2.9.0.post0 six-1.17.0\n"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 3,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 3,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "details": {
+            "airtable": {
+              "status": "ok",
+              "latest_version": "0.12.2",
+              "last_modified": "2026-10-01T13:57:44.733Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "@supabase/supabase-js": {
+              "status": "ok",
+              "latest_version": "2.117.2",
+              "last_modified": "2026-10-02T13:13:07.691Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "dotenv": {
+              "status": "ok",
+              "latest_version": "18.0.5",
+              "last_modified": "2026-09-30T15:50:19.250Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.5
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 1,
+      "output_tail": "npm error code ETARGET\nnpm error notarget No matching version found for airtable@^2.1.0.\nnpm error notarget In most cases you or one of your dependencies are requesting\nnpm error notarget a package version that doesn't exist.\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-06T19_46_05_623Z-debug-0.log\n"
+    }
+  ]
+}
