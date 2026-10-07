@@ -17,5 +17,8 @@ images:
   agent: zurixai-exp-agent:prereg-v1      # same agent image as experiment 1
   score: zurixai-exp-score:prereg-v2      # zurix 0.4.0
 claude_code_version: 2.1.289
-zurix_commit: TO_BE_PINNED_AT_FREEZE      # the public 0.4.0 release commit
+zurix_commit: ed0a6fc78739e60d6773756d3631ba7960ab1ca1   # the public 0.4.0 release commit (#5)
 infra_retries: 2
+image_ids:
+  agent: sha256:59c308ae8316f50b5153cd889902dabe3d1ec7f2a4881e6f9ed2f4d06a410a70
+  score: sha256:d0ac47604da9a9d9709c12dd338232a3defb1c54810c8d47d772248424f43883

@@ -6,7 +6,7 @@ COPY --from=node:22-bookworm-slim@sha256:43ac6c60b8f89723f746e8a92ce91abd5017e62
 RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
  && ln -s ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
 
-ARG ZURIX_COMMIT=23b8b3f6682b98b1b47fdf31a54868fe46e07e89
+ARG ZURIX_COMMIT=23b8b3f6682b98b1b47fdf31a54868fe46e07e89  # experiment 2 builds with --build-arg ZURIX_COMMIT=<exp2/experiment.yaml zurix_commit>
 RUN pip install --no-cache-dir "zurixai @ git+https://github.com/HuziM/zurixai@${ZURIX_COMMIT}"
 
 RUN useradd --create-home --shell /bin/bash scorer
