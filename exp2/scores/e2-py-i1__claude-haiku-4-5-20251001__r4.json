@@ -1,0 +1,32 @@
+{
+  "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r4",
+  "task": "e2-py-i1",
+  "language": "python",
+  "category": "integration",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 4,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "zurix_exit": 0,
+  "zurix_suspicious": [],
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [],
+  "zurix_version_not_found": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.019422099999999998,
+  "num_turns": 4
+}

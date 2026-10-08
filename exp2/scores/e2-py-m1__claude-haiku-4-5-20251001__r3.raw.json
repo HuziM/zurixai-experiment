@@ -1,0 +1,77 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "pyyaml": {
+              "status": "ok",
+              "latest_version": "6.0.3",
+              "last_release": "2025-09-25T21:31:46.040932Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 1.0
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting PyYAML==6.0.2 (from -r requirements.txt (line 1))\n  Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (2.1 kB)\nDownloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (739 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 739.2/739.2 kB 2.4 MB/s eta 0:00:00\nInstalling collected packages: PyYAML\nSuccessfully installed PyYAML-6.0.2\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "PyYAML==6.0.2",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- PyYAML==6.0.2",
+      "exit": 0,
+      "output_tail": "Collecting PyYAML==6.0.2\n  Using cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (2.1 kB)\nUsing cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (739 kB)\nWould install PyYAML-6.0.2\n"
+    }
+  ]
+}

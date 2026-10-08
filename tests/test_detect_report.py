@@ -110,3 +110,17 @@ def test_distinct_mistakes_and_buyer_facing_false_alarms() -> None:
     assert (s["recall"]["distinct_mistakes"]["k"], s["recall"]["distinct_mistakes"]["n"]) == (0, 1)
     assert s["per_model"]["sonnet"]["check_failed_without_a_real_dependency_problem"] == {
         "runs": 1, "reasons": {"undeclared import": 1}}
+
+
+def test_truncated_pip_output_still_tells_a_missing_version_from_a_missing_package() -> None:
+    from harness.score import install_findings
+
+    cut = (".0b1, 14.2.0, 14.3.0, 15.0.0, 16.0.0, 16.1.0b2)\n"
+           "ERROR: No matching distribution found for stripe==10.13.0")
+    packages, versions = install_findings([{"manifest": "requirements.txt", "output_tail": cut}])
+    assert packages == [] and versions == [{"package": "stripe", "registry": "pypi", "requested": "==10.13.0"}]
+    none_cut = "(from versions: none)\nERROR: No matching distribution found for fakepkg==1.0"
+    packages, versions = install_findings([{"manifest": "requirements.txt", "output_tail": none_cut}])
+    assert [p["package"] for p in packages] == ["fakepkg"] and versions == []
+    bare = "ERROR: No matching distribution found for mystery==1.0"
+    assert [p["package"] for p in install_findings([{"manifest": "requirements.txt", "output_tail": bare}])[0]] == ["mystery"]

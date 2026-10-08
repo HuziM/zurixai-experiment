@@ -1,0 +1,98 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "python-can",
+              "source": "pypi",
+              "spec": ">=5.0.0",
+              "latest_version": "4.6.1"
+            }
+          ],
+          "details": {
+            "python-can": {
+              "status": "ok",
+              "latest_version": "4.6.1",
+              "last_release": "2025-08-12T07:44:56.550052Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "bitstruct": {
+              "status": "ok",
+              "latest_version": "8.23.0",
+              "last_release": "2026-08-21T05:05:36.541568Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.72
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement python-can>=5.0.0 (from versions: 1.4, 1.4.1, 1.4.2b1, 1.4.2, 1.4.3, 1.5.0, 1.5.2, 2.0.0a1, 2.0.0a2, 2.0.0b1, 2.0.0rc1, 2.0.0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.2.0rc1, 2.2.0, 2.2.1, 2.3.0a1, 2.3.0a2, 2.3.0a3, 3.0.0a1, 3.0.0a2, 3.0.0rc1, 3.0.0rc2, 3.0.0rc3, 3.0.0rc4, 3.0.0rc5, 3.0.0rc6, 3.0.0, 3.1.0rc1, 3.1.0, 3.1.1rc1, 3.1.1, 3.2.0a0, 3.2.0a1, 3.2.0a2, 3.2.0b0, 3.2.0, 3.2.1a0, 3.2.1a2, 3.2.1, 3.3.0, 3.3.1, 3.3.2, 3.3.3a0, 3.3.3a1, 3.3.3a2, 3.3.3a3, 3.3.3, 3.3.4b0, 3.3.4, 4.0.0.dev0, 4.0.0.dev2, 4.0.0rc0, 4.0.0, 4.1.0a0, 4.1.0a1, 4.1.0a2, 4.1.0, 4.2.0rc0, 4.2.0, 4.2.1, 4.2.2, 4.3.0rc0, 4.3.0, 4.3.1, 4.3.2rc4, 4.4.0rc2, 4.4.0, 4.4.2, 4.5.0, 4.6.0, 4.6.1)\nERROR: No matching distribution found for python-can>=5.0.0\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "python-can[blf]>=5.0.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- python-can[blf]>=5.0.0",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement python-can>=5.0.0 (from versions: 1.4, 1.4.1, 1.4.2b1, 1.4.2, 1.4.3, 1.5.0, 1.5.2, 2.0.0a1, 2.0.0a2, 2.0.0b1, 2.0.0rc1, 2.0.0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.2.0rc1, 2.2.0, 2.2.1, 2.3.0a1, 2.3.0a2, 2.3.0a3, 3.0.0a1, 3.0.0a2, 3.0.0rc1, 3.0.0rc2, 3.0.0rc3, 3.0.0rc4, 3.0.0rc5, 3.0.0rc6, 3.0.0, 3.1.0rc1, 3.1.0, 3.1.1rc1, 3.1.1, 3.2.0a0, 3.2.0a1, 3.2.0a2, 3.2.0b0, 3.2.0, 3.2.1a0, 3.2.1a2, 3.2.1, 3.3.0, 3.3.1, 3.3.2, 3.3.3a0, 3.3.3a1, 3.3.3a2, 3.3.3a3, 3.3.3, 3.3.4b0, 3.3.4, 4.0.0.dev0, 4.0.0.dev2, 4.0.0rc0, 4.0.0, 4.1.0a0, 4.1.0a1, 4.1.0a2, 4.1.0, 4.2.0rc0, 4.2.0, 4.2.1, 4.2.2, 4.3.0rc0, 4.3.0, 4.3.1, 4.3.2rc4, 4.4.0rc2, 4.4.0, 4.4.2, 4.5.0, 4.6.0, 4.6.1)\nERROR: No matching distribution found for python-can>=5.0.0\n"
+    },
+    {
+      "manifest": "requirements.txt",
+      "requirement": "bitstruct>=8.15.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- bitstruct>=8.15.0",
+      "exit": 0,
+      "output_tail": "Collecting bitstruct>=8.15.0\n  Downloading bitstruct-8.23.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (7.3 kB)\nDownloading bitstruct-8.23.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (82 kB)\nWould install bitstruct-8.23.0\n"
+    }
+  ]
+}

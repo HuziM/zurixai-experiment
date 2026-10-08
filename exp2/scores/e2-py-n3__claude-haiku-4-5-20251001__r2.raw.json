@@ -1,0 +1,84 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "pdfplumber",
+              "source": "pypi",
+              "spec": "==0.12.1",
+              "latest_version": "0.11.10"
+            }
+          ],
+          "details": {
+            "pdfplumber": {
+              "status": "ok",
+              "latest_version": "0.11.10",
+              "last_release": "2026-06-15T03:31:29.702225Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.45
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement pdfplumber==0.12.1 (from versions: 0.0.0, 0.0.1, 0.0.2, 0.0.3, 0.1.0, 0.1.1, 0.1.2, 0.2.0, 0.3.0, 0.3.1, 0.3.2, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.4.4, 0.4.5, 0.4.6, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6, 0.5.7, 0.5.8, 0.5.9, 0.5.10, 0.5.11, 0.5.12, 0.5.13, 0.5.14, 0.5.15, 0.5.16, 0.5.17, 0.5.18, 0.5.19, 0.5.20, 0.5.21, 0.5.22, 0.5.23, 0.5.24, 0.5.25, 0.5.26, 0.5.27, 0.5.28, 0.6.0, 0.6.1, 0.6.2, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7.5, 0.7.6, 0.8.0, 0.8.1, 0.9.0, 0.10.0, 0.10.1, 0.10.2, 0.10.3, 0.10.4, 0.11.0, 0.11.1, 0.11.2, 0.11.3, 0.11.4, 0.11.5, 0.11.6, 0.11.7, 0.11.8, 0.11.9, 0.11.10)\nERROR: No matching distribution found for pdfplumber==0.12.1\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "pdfplumber==0.12.1",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- pdfplumber==0.12.1",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement pdfplumber==0.12.1 (from versions: 0.0.0, 0.0.1, 0.0.2, 0.0.3, 0.1.0, 0.1.1, 0.1.2, 0.2.0, 0.3.0, 0.3.1, 0.3.2, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.4.4, 0.4.5, 0.4.6, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6, 0.5.7, 0.5.8, 0.5.9, 0.5.10, 0.5.11, 0.5.12, 0.5.13, 0.5.14, 0.5.15, 0.5.16, 0.5.17, 0.5.18, 0.5.19, 0.5.20, 0.5.21, 0.5.22, 0.5.23, 0.5.24, 0.5.25, 0.5.26, 0.5.27, 0.5.28, 0.6.0, 0.6.1, 0.6.2, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.7.5, 0.7.6, 0.8.0, 0.8.1, 0.9.0, 0.10.0, 0.10.1, 0.10.2, 0.10.3, 0.10.4, 0.11.0, 0.11.1, 0.11.2, 0.11.3, 0.11.4, 0.11.5, 0.11.6, 0.11.7, 0.11.8, 0.11.9, 0.11.10)\nERROR: No matching distribution found for pdfplumber==0.12.1\n"
+    }
+  ]
+}

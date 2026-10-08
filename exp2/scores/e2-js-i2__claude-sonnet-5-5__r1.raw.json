@@ -1,0 +1,80 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "dropbox": {
+              "status": "ok",
+              "latest_version": "10.47.0",
+              "last_modified": "2026-09-23T04:26:00.374Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.55
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0,
+      "output_tail": "\nadded 1 package in 2s\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "dropbox@^10.34.0",
+      "package": "dropbox",
+      "spec": "^10.34.0",
+      "cmd": "npm view dropbox@^10.34.0 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"10.34.0\",\n  \"10.36.0\",\n  \"10.37.0\",\n  \"10.37.1\",\n  \"10.38.0\",\n  \"10.39.0\",\n  \"10.40.0\",\n  \"10.41.0\",\n  \"10.42.0\",\n  \"10.43.0\",\n  \"10.44.0\",\n  \"10.45.0\",\n  \"10.46.0\",\n  \"10.47.0\"\n]\n",
+      "output_tail": "[\n  \"10.34.0\",\n  \"10.36.0\",\n  \"10.37.0\",\n  \"10.37.1\",\n  \"10.38.0\",\n  \"10.39.0\",\n  \"10.40.0\",\n  \"10.41.0\",\n  \"10.42.0\",\n  \"10.43.0\",\n  \"10.44.0\",\n  \"10.45.0\",\n  \"10.46.0\",\n  \"10.47.0\"\n]\n"
+    }
+  ]
+}

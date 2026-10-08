@@ -1,0 +1,11 @@
+run_id,package,registry,kind,found_by,registry_url,verdict,reviewed_on,note
+e2-py-i2__claude-haiku-4-5-20251001__r2,stripe,pypi,install_not_found,install,https://pypi.org/project/stripe/,,,
+e2-py-i3__claude-haiku-4-5-20251001__r1,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i3__claude-sonnet-5-5__r1,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i3__claude-sonnet-5-5__r2,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r1,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r2,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r3,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r3,psycopg-binary,pypi,install_not_found,install,https://pypi.org/project/psycopg-binary/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r4,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,
+e2-py-i5__claude-haiku-4-5-20251001__r5,googleapiclient,pypi,not_in_manifest,zurix,https://pypi.org/project/googleapiclient/,,,

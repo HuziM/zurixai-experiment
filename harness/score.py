@@ -32,6 +32,14 @@ _NPM_404_URL = re.compile(r"404 Not Found - GET https://registry\.npmjs\.org/(\S
 _NPM_404_MSG = re.compile(r"'((?:@[^/\s']+/)?[^@\s']+)@[^'\s]*' is not in this registry")
 
 
+_VERSION_LIST_TAIL = re.compile(r"(?:^|[\s,])\d[\w.!+-]*(?:,\s*\d[\w.!+-]*)+\)\s*$")
+
+
+def _versions_listed_before(text: str, end: int) -> bool:
+    """Whether the text just before `end` finishes a non-empty pip "(from versions: a, b, c)" list."""
+    return bool(_VERSION_LIST_TAIL.search(text[max(0, end - 400):end].rstrip().removesuffix("ERROR:").rstrip()))
+
+
 def install_findings(records: list[dict]) -> tuple[list[dict], list[dict]]:
     """What a clean install says is missing: an independent check on the detector.
 
@@ -60,11 +68,18 @@ def install_findings(records: list[dict]) -> tuple[list[dict], list[dict]]:
             else:
                 versions.setdefault(("pypi", name.lower()), {"package": name, "registry": "pypi",
                                                              "requested": requirement[len(name):]})
-        for requirement in _PIP_NO_DIST.findall(text):
+        for match_ in _PIP_NO_DIST.finditer(text):
+            requirement = match_.group(1)
             match = _PIP_NAME.match(requirement)
             if match and match.group(0).lower() not in seen_with_versions:
                 name = match.group(0)
-                packages.setdefault(("pypi", name.lower()), {"package": name, "registry": "pypi"})
+                if _versions_listed_before(text, match_.start()):
+                    # The "Could not find a version…" line was cut off by output truncation, but the
+                    # tail of its non-empty "(from versions: …)" list is there: the package exists.
+                    versions.setdefault(("pypi", name.lower()), {"package": name, "registry": "pypi",
+                                                                 "requested": requirement[len(name):].rstrip(";")})
+                else:
+                    packages.setdefault(("pypi", name.lower()), {"package": name, "registry": "pypi"})
     return list(packages.values()), list(versions.values())
 
 

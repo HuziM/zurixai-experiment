@@ -1,0 +1,109 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 1,
+          "invalid_imports": [
+            "google (from gtfs_vehicles.py)"
+          ],
+          "undeclared": {
+            "google": {
+              "package": "protobuf",
+              "files": [
+                "gtfs_vehicles.py"
+              ]
+            }
+          },
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [
+            {
+              "name": "google",
+              "package": "protobuf",
+              "source": "pypi",
+              "files": [
+                "gtfs_vehicles.py"
+              ]
+            }
+          ],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "requests": {
+              "status": "ok",
+              "latest_version": "2.34.2",
+              "last_release": "2026-05-14T19:25:26.443000Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "gtfs-realtime-bindings": {
+              "status": "ok",
+              "latest_version": "3.0.0",
+              "last_release": "2026-09-17T17:57:38.114319Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 1.24
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting gtfs-realtime-bindings>=1.0.0 (from -r requirements.txt (line 1))\n  Downloading gtfs_realtime_bindings-3.0.0-py3-none-any.whl.metadata (659 bytes)\nCollecting requests>=2.31 (from -r requirements.txt (line 2))\n  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nCollecting protobuf>=7.34.0 (from gtfs-realtime-bindings>=1.0.0->-r requirements.txt (line 1))\n  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl.metadata (595 bytes)\nCollecting charset_normalizer<4,>=2 (from requests>=2.31->-r requirements.txt (line 2))\n  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)\nCollecting idna<4,>=2.5 (from requests>=2.31->-r requirements.txt (line 2))\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\nCollecting urllib3<3,>=1.26 (from requests>=2.31->-r requirements.txt (line 2))\n  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)\nCollecting certifi>=2023.5.7 (from requests>=2.31->-r requirements.txt (line 2))\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nDownloading gtfs_realtime_bindings-3.0.0-py3-none-any.whl (11 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nDownloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (246 kB)\nDownloading idna-3.20-py3-none-any.whl (69 kB)\nDownloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl (344 kB)\nDownloading urllib3-2.8.0-py3-none-any.whl (135 kB)\nInstalling collected packages: urllib3, protobuf, idna, charset_normalizer, certifi, requests, gtfs-realtime-bindings\nSuccessfully installed certifi-2026.7.22 charset_normalizer-3.5.2 gtfs-realtime-bindings-3.0.0 idna-3.20 protobuf-7.36.2 requests-2.34.2 urllib3-2.8.0\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "gtfs-realtime-bindings>=1.0.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- gtfs-realtime-bindings>=1.0.0",
+      "exit": 0,
+      "output_tail": "Collecting gtfs-realtime-bindings>=1.0.0\n  Using cached gtfs_realtime_bindings-3.0.0-py3-none-any.whl.metadata (659 bytes)\nUsing cached gtfs_realtime_bindings-3.0.0-py3-none-any.whl (11 kB)\nWould install gtfs-realtime-bindings-3.0.0\n"
+    },
+    {
+      "manifest": "requirements.txt",
+      "requirement": "requests>=2.31",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- requests>=2.31",
+      "exit": 0,
+      "output_tail": "Collecting requests>=2.31\n  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nUsing cached requests-2.34.2-py3-none-any.whl (73 kB)\nWould install requests-2.34.2\n"
+    }
+  ]
+}

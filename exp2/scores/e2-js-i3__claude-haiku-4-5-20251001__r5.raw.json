@@ -1,0 +1,138 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 4,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "@hubspot/api-client",
+              "source": "npm",
+              "spec": "^11.3.4",
+              "latest_version": "14.0.1"
+            }
+          ],
+          "details": {
+            "@hubspot/api-client": {
+              "status": "ok",
+              "latest_version": "14.0.1",
+              "last_modified": "2026-10-08T16:28:56.446Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "@types/node": {
+              "status": "ok",
+              "latest_version": "26.6.4",
+              "last_modified": "2026-10-01T22:39:33.908Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "typescript": {
+              "status": "ok",
+              "latest_version": "7.0.2",
+              "last_modified": "2026-10-08T08:25:08.030Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "ts-node": {
+              "status": "ok",
+              "latest_version": "10.9.2",
+              "last_modified": "2025-10-13T23:43:21.909Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 4.26
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 1,
+      "output_tail": "npm error code ETARGET\nnpm error notarget No matching version found for @hubspot/api-client@^11.3.4.\nnpm error notarget In most cases you or one of your dependencies are requesting\nnpm error notarget a package version that doesn't exist.\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_38_08_492Z-debug-0.log\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "@hubspot/api-client@^11.3.4",
+      "package": "@hubspot/api-client",
+      "spec": "^11.3.4",
+      "cmd": "npm view @hubspot/api-client@^11.3.4 version --json",
+      "exit": 1,
+      "stdout": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^11.3.4\",\n    \"detail\": \"'@hubspot/api-client@^11.3.4' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\n",
+      "output_tail": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^11.3.4\",\n    \"detail\": \"'@hubspot/api-client@^11.3.4' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\nnpm error code E404\nnpm error 404 No match found for version ^11.3.4\nnpm error 404\nnpm error 404  '@hubspot/api-client@^11.3.4' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_38_16_943Z-debug-0.log\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "@types/node@^22.10.0",
+      "package": "@types/node",
+      "spec": "^22.10.0",
+      "cmd": "npm view @types/node@^22.10.0 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"22.10.0\",\n  \"22.10.1\",\n  \"22.10.2\",\n  \"22.10.3\",\n  \"22.10.4\",\n  \"22.10.5\",\n  \"22.10.6\",\n  \"22.10.7\",\n  \"22.10.8\",\n  \"22.10.9\",\n  \"22.10.10\",\n  \"22.12.0\",\n  \"22.13.0\",\n  \"22.13.1\",\n  \"22.13.2\",\n  \"22.13.3\",\n  \"22.13.4\",\n  \"22.13.5\",\n  \"22.13.6\",\n  \"22.13.7\",\n  \"22.13.8\",\n  \"22.13.9\",\n  \"22.13.10\",\n  \"22.13.11\",\n  \"22.13.12\",\n  \"22.13.13\",\n  \"22.13.14\",\n  \"22.13.15\",\n  \"22.13.16\",\n  \"22.13.17\",\n  \"22.14.0\",\n  \"22.14.1\",\n  \"22.15.0\",\n  \"22.15.1\",\n  \"22.15.2\",\n  \"22.15.3\",\n  \"22.15.4\",\n  \"22.15.5\",\n  \"22.15.6\",\n  \"22.15.7\",\n  \"22.15.8\",\n  \"22.15.9\",\n  \"22.15.10\",\n  \"22.15.11\",\n  \"22.15.12\",\n  \"22.15.13\",\n  \"22.15.14\",\n  \"22.15.15\",\n  \"22.15.16\",\n  \"22.15.17\",\n  \"22.15.18\",\n  \"22.15.19\",\n  \"22.15.20\",\n  \"22.15.21\",\n  \"22.15.22\",\n  \"22.15.23\",\n  \"22.15.24\",\n  \"22.15.25\",\n  \"22.15.26\",\n  \"22.15.27\",\n  \"22.15.28\",\n  \"22.15.29\",\n  \"22.15.30\",\n  \"22.15.31\",\n  \"22.15.32\",\n  \"22.15.33\",\n  \"22.15.34\",\n  \"22.15.35\",\n  \"22.16.0\",\n  \"22.16.1\",\n  \"22.16.2\",\n  \"22.16.3\",\n  \"22.16.4\",\n  \"22.16.5\",\n  \"22.17.0\",\n  \"22.17.1\",\n  \"22.17.2\",\n  \"22.18.0\",\n  \"22.18.1\",\n  \"22.18.2\",\n  \"22.18.3\",\n  \"22.18.4\",\n  \"22.18.5\",\n  \"22.18.6\",\n  \"22.18.7\",\n  \"22.18.8\",\n  \"22.18.9\",\n  \"22.18.10\",\n  \"22.18.11\",\n  \"22.18.12\",\n  \"22.18.13\",\n  \"22.19.0\",\n  \"22.19.1\",\n  \"22.19.2\",\n  \"22.19.3\",\n  \"22.19.4\",\n  \"22.19.5\",\n  \"22.19.6\",\n  \"22.19.7\",\n  \"22.19.8\",\n  \"22.19.9\",\n  \"22.19.10\",\n  \"22.19.11\",\n  \"22.19.12\",\n  \"22.19.13\",\n  \"22.19.14\",\n  \"22.19.15\",\n  \"22.19.16\",\n  \"22.19.17\",\n  \"22.19.18\",\n  \"22.19.19\",\n  \"22.19.20\",\n  \"22.19.21\",\n  \"22.20.0\",\n  \"22.20.1\",\n  \"22.20.2\",\n  \"22.20.3\",\n  \"22.20.4\",\n  \"22.20.5\"\n]\n",
+      "output_tail": "[\n  \"22.10.0\",\n  \"22.10.1\",\n  \"22.10.2\",\n  \"22.10.3\",\n  \"22.10.4\",\n  \"22.10.5\",\n  \"22.10.6\",\n  \"22.10.7\",\n  \"22.10.8\",\n  \"22.10.9\",\n  \"22.10.10\",\n  \"22.12.0\",\n  \"22.13.0\",\n  \"22.13.1\",\n  \"22.13.2\",\n  \"22.13.3\",\n  \"22.13.4\",\n  \"22.13.5\",\n  \"22.13.6\",\n  \"22.13.7\",\n  \"22.13.8\",\n  \"22.13.9\",\n  \"22.13.10\",\n  \"22.13.11\",\n  \"22.13.12\",\n  \"22.13.13\",\n  \"22.13.14\",\n  \"22.13.15\",\n  \"22.13.16\",\n  \"22.13.17\",\n  \"22.14.0\",\n  \"22.14.1\",\n  \"22.15.0\",\n  \"22.15.1\",\n  \"22.15.2\",\n  \"22.15.3\",\n  \"22.15.4\",\n  \"22.15.5\",\n  \"22.15.6\",\n  \"22.15.7\",\n  \"22.15.8\",\n  \"22.15.9\",\n  \"22.15.10\",\n  \"22.15.11\",\n  \"22.15.12\",\n  \"22.15.13\",\n  \"22.15.14\",\n  \"22.15.15\",\n  \"22.15.16\",\n  \"22.15.17\",\n  \"22.15.18\",\n  \"22.15.19\",\n  \"22.15.20\",\n  \"22.15.21\",\n  \"22.15.22\",\n  \"22.15.23\",\n  \"22.15.24\",\n  \"22.15.25\",\n  \"22.15.26\",\n  \"22.15.27\",\n  \"22.15.28\",\n  \"22.15.29\",\n  \"22.15.30\",\n  \"22.15.31\",\n  \"22.15.32\",\n  \"22.15.33\",\n  \"22.15.34\",\n  \"22.15.35\",\n  \"22.16.0\",\n  \"22.16.1\",\n  \"22.16.2\",\n  \"22.16.3\",\n  \"22.16.4\",\n  \"22.16.5\",\n  \"22.17.0\",\n  \"22.17.1\",\n  \"22.17.2\",\n  \"22.18.0\",\n  \"22.18.1\",\n  \"22.18.2\",\n  \"22.18.3\",\n  \"22.18.4\",\n  \"22.18.5\",\n  \"22.18.6\",\n  \"22.18.7\",\n  \"22.18.8\",\n  \"22.18.9\",\n  \"22.18.10\",\n  \"22.18.11\",\n  \"22.18.12\",\n  \"22.18.13\",\n  \"22.19.0\",\n  \"22.19.1\",\n  \"22.19.2\",\n  \"22.19.3\",\n  \"22.19.4\",\n  \"22.19.5\",\n  \"22.19.6\",\n  \"22.19.7\",\n  \"22.19.8\",\n  \"22.19.9\",\n  \"22.19.10\",\n  \"22.19.11\",\n  \"22.19.12\",\n  \"22.19.13\",\n  \"22.19.14\",\n  \"22.19.15\",\n  \"22.19.16\",\n  \"22.19.17\",\n  \"22.19.18\",\n  \"22.19.19\",\n  \"22.19.20\",\n  \"22.19.21\",\n  \"22.20.0\",\n  \"22.20.1\",\n  \"22.20.2\",\n  \"22.20.3\",\n  \"22.20.4\",\n  \"22.20.5\"\n]\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "typescript@^5.7.2",
+      "package": "typescript",
+      "spec": "^5.7.2",
+      "cmd": "npm view typescript@^5.7.2 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"5.7.2\",\n  \"5.7.3\",\n  \"5.8.2\",\n  \"5.8.3\",\n  \"5.9.2\",\n  \"5.9.3\"\n]\n",
+      "output_tail": "[\n  \"5.7.2\",\n  \"5.7.3\",\n  \"5.8.2\",\n  \"5.8.3\",\n  \"5.9.2\",\n  \"5.9.3\"\n]\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "ts-node@^10.9.2",
+      "package": "ts-node",
+      "spec": "^10.9.2",
+      "cmd": "npm view ts-node@^10.9.2 version --json",
+      "exit": 0,
+      "stdout": "\"10.9.2\"\n",
+      "output_tail": "\"10.9.2\"\n"
+    }
+  ]
+}

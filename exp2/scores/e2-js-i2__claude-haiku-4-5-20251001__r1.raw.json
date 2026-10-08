@@ -1,0 +1,87 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "dropbox",
+              "source": "npm",
+              "spec": "^11.0.0",
+              "latest_version": "10.47.0"
+            }
+          ],
+          "details": {
+            "dropbox": {
+              "status": "ok",
+              "latest_version": "10.47.0",
+              "last_modified": "2026-09-23T04:26:00.374Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.71
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 1,
+      "output_tail": "npm error code ETARGET\nnpm error notarget No matching version found for dropbox@^11.0.0.\nnpm error notarget In most cases you or one of your dependencies are requesting\nnpm error notarget a package version that doesn't exist.\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_37_13_712Z-debug-0.log\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "dropbox@^11.0.0",
+      "package": "dropbox",
+      "spec": "^11.0.0",
+      "cmd": "npm view dropbox@^11.0.0 version --json",
+      "exit": 1,
+      "stdout": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^11.0.0\",\n    \"detail\": \"'dropbox@^11.0.0' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\n",
+      "output_tail": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^11.0.0\",\n    \"detail\": \"'dropbox@^11.0.0' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\nnpm error code E404\nnpm error 404 No match found for version ^11.0.0\nnpm error 404\nnpm error 404  'dropbox@^11.0.0' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_37_14_558Z-debug-0.log\n"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "laspy",
+              "source": "pypi",
+              "spec": "==2.8.7",
+              "latest_version": "2.7.0"
+            }
+          ],
+          "details": {
+            "laspy": {
+              "status": "ok",
+              "latest_version": "2.7.0",
+              "last_release": "2026-01-14T22:18:40.779416Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.36
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "ERROR: Ignored the following yanked versions: 2.6.0\nERROR: Could not find a version that satisfies the requirement laspy==2.8.7 (from versions: 1.0.0, 1.1.0, 1.2.0, 1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.2.5, 1.3.0, 1.3.1, 1.3.2, 1.4.0, 1.4.1, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.7.1, 2.0.0a0, 2.0.0a1, 2.0.0a2, 2.0.0a3, 2.0.0, 2.0.1, 2.0.2, 2.0.3, 2.1.0, 2.1.1, 2.1.2, 2.2.0b0, 2.2.0, 2.3.0, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.5.4, 2.6.1, 2.7.0)\nERROR: No matching distribution found for laspy==2.8.7\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "laspy==2.8.7",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- laspy==2.8.7",
+      "exit": 1,
+      "output_tail": "ERROR: Ignored the following yanked versions: 2.6.0\nERROR: Could not find a version that satisfies the requirement laspy==2.8.7 (from versions: 1.0.0, 1.1.0, 1.2.0, 1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.2.5, 1.3.0, 1.3.1, 1.3.2, 1.4.0, 1.4.1, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.7.1, 2.0.0a0, 2.0.0a1, 2.0.0a2, 2.0.0a3, 2.0.0, 2.0.1, 2.0.2, 2.0.3, 2.1.0, 2.1.1, 2.1.2, 2.2.0b0, 2.2.0, 2.3.0, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.5.4, 2.6.1, 2.7.0)\nERROR: No matching distribution found for laspy==2.8.7\n"
+    }
+  ]
+}

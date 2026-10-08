@@ -1,0 +1,80 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "nodemailer": {
+              "status": "ok",
+              "latest_version": "10.0.16",
+              "last_modified": "2026-10-07T13:45:26.696Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.53
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0,
+      "output_tail": "\nadded 1 package in 2s\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "nodemailer@^6.9.7",
+      "package": "nodemailer",
+      "spec": "^6.9.7",
+      "cmd": "npm view nodemailer@^6.9.7 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"6.9.7\",\n  \"6.9.8\",\n  \"6.9.9\",\n  \"6.9.10\",\n  \"6.9.11\",\n  \"6.9.12\",\n  \"6.9.13\",\n  \"6.9.14\",\n  \"6.9.15\",\n  \"6.9.16\",\n  \"6.10.0\",\n  \"6.10.1\"\n]\n",
+      "output_tail": "[\n  \"6.9.7\",\n  \"6.9.8\",\n  \"6.9.9\",\n  \"6.9.10\",\n  \"6.9.11\",\n  \"6.9.12\",\n  \"6.9.13\",\n  \"6.9.14\",\n  \"6.9.15\",\n  \"6.9.16\",\n  \"6.10.0\",\n  \"6.10.1\"\n]\n"
+    }
+  ]
+}

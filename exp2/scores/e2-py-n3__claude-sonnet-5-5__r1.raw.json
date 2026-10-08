@@ -1,0 +1,77 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "pdfplumber": {
+              "status": "ok",
+              "latest_version": "0.11.10",
+              "last_release": "2026-06-15T03:31:29.702225Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 3.06
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "Collecting pdfplumber>=0.11 (from -r requirements.txt (line 1))\n  Downloading pdfplumber-0.11.10-py3-none-any.whl.metadata (43 kB)\nCollecting pdfminer.six==20260107 (from pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading pdfminer_six-20260107-py3-none-any.whl.metadata (4.3 kB)\nCollecting Pillow>=12.2.0 (from pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)\nCollecting pypdfium2>=5.9.0 (from pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading pypdfium2-5.14.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)\nCollecting charset-normalizer>=2.0.0 (from pdfminer.six==20260107->pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)\nCollecting cryptography>=36.0.0 (from pdfminer.six==20260107->pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_aarch64.whl.metadata (4.4 kB)\nCollecting cffi>=2.0.0 (from cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.5 kB)\nCollecting pycparser (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber>=0.11->-r requirements.txt (line 1))\n  Downloading pycparser-3.1-py3-none-any.whl.metadata (8.2 kB)\nDownloading pdfplumber-0.11.10-py3-none-any.whl (60 kB)\nDownloading pdfminer_six-20260107-py3-none-any.whl (6.6 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 6.6/6.6 MB 1.4 MB/s eta 0:00:00\nDownloading pillow-12.3.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.3 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 6.3/6.3 MB 3.0 MB/s eta 0:00:00\nDownloading pypdfium2-5.14.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.7 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 3.7/3.7 MB 3.3 MB/s eta 0:00:00\nDownloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (246 kB)\nDownloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_aarch64.whl (4.7 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 4.7/4.7 MB 3.6 MB/s eta 0:00:00\nDownloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (222 kB)\nDownloading pycparser-3.1-py3-none-any.whl (48 kB)\nInstalling collected packages: pypdfium2, pycparser, Pillow, charset-normalizer, cffi, cryptography, pdfminer.six, pdfplumber\nSuccessfully installed Pillow-12.3.0 cffi-2.1.1 charset-normalizer-3.5.2 cryptography-50.0.2 pdfminer.six-20260107 pdfplumber-0.11.10 pycparser-3.1 pypdfium2-5.14.0\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "pdfplumber>=0.11",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- pdfplumber>=0.11",
+      "exit": 0,
+      "output_tail": "Collecting pdfplumber>=0.11\n  Using cached pdfplumber-0.11.10-py3-none-any.whl.metadata (43 kB)\nUsing cached pdfplumber-0.11.10-py3-none-any.whl (60 kB)\nWould install pdfplumber-0.11.10\n"
+    }
+  ]
+}

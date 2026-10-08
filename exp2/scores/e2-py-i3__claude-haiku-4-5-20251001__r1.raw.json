@@ -1,0 +1,125 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 4,
+          "invalid": 1,
+          "invalid_imports": [
+            "googleapiclient (from gmail_reader.py)"
+          ],
+          "undeclared": {
+            "googleapiclient": {
+              "package": "googleapiclient",
+              "files": [
+                "gmail_reader.py"
+              ]
+            }
+          },
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [
+            {
+              "name": "googleapiclient",
+              "package": "googleapiclient",
+              "source": "pypi",
+              "files": [
+                "gmail_reader.py"
+              ]
+            }
+          ],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 3,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "google-api-python-client": {
+              "status": "ok",
+              "latest_version": "2.201.0",
+              "last_release": "2026-09-30T22:06:18.574400Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "google-auth-oauthlib": {
+              "status": "ok",
+              "latest_version": "1.5.0",
+              "last_release": "2026-09-29T19:25:31.842297Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "google-auth-httplib2": {
+              "status": "ok",
+              "latest_version": "0.4.4",
+              "last_release": "2026-10-01T18:07:31.699033Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 1,
+          "orphaned_list": [
+            "get_message_body in gmail_reader.py"
+          ],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 2.88
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0,
+      "output_tail": "y.whl.metadata (8.4 kB)\nCollecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.33.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.108.0->-r requirements.txt (line 3))\n  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)\nCollecting idna<4,>=2.5 (from requests<3.0.0,>=2.33.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.108.0->-r requirements.txt (line 3))\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\nCollecting urllib3<3,>=1.26 (from requests<3.0.0,>=2.33.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.108.0->-r requirements.txt (line 3))\n  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)\nCollecting certifi>=2023.5.7 (from requests<3.0.0,>=2.33.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5->google-api-python-client==2.108.0->-r requirements.txt (line 3))\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nCollecting pycparser (from cffi>=2.0.0->cryptography>=38.0.3->google-auth>=2.15.0->google-auth-oauthlib==1.2.0->-r requirements.txt (line 1))\n  Downloading pycparser-3.1-py3-none-any.whl.metadata (8.2 kB)\nDownloading google_auth_oauthlib-1.2.0-py2.py3-none-any.whl (24 kB)\nDownloading google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)\nDownloading google_api_python_client-2.108.0-py2.py3-none-any.whl (12.8 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 12.8/12.8 MB 1.7 MB/s eta 0:00:00\nDownloading google_api_core-2.41.0-py3-none-any.whl (215 kB)\nDownloading google_auth-2.61.0-py3-none-any.whl (268 kB)\nDownloading httplib2-0.32.0-py3-none-any.whl (93 kB)\nDownloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)\nDownloading uritemplate-4.2.0-py3-none-any.whl (11 kB)\nDownloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_aarch64.whl (4.7 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 4.7/4.7 MB 2.9 MB/s eta 0:00:00\nDownloading googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)\nDownloading oauthlib-4.0.0-py3-none-any.whl (159 kB)\nDownloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)\nDownloading proto_plus-1.29.0-py3-none-any.whl (50 kB)\nDownloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl (344 kB)\nDownloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)\nDownloading pyparsing-3.3.3-py3-none-any.whl (126 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nDownloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (222 kB)\nDownloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (246 kB)\nDownloading idna-3.20-py3-none-any.whl (69 kB)\nDownloading pyasn1-0.6.4-py3-none-any.whl (84 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nDownloading urllib3-2.8.0-py3-none-any.whl (135 kB)\nDownloading pycparser-3.1-py3-none-any.whl (48 kB)\nInstalling collected packages: urllib3, uritemplate, typing-extensions, pyparsing, pycparser, pyasn1, protobuf, oauthlib, idna, charset_normalizer, certifi, requests, pyasn1-modules, proto-plus, opentelemetry-api, httplib2, googleapis-common-protos, cffi, requests-oauthlib, cryptography, google-auth, google-auth-oauthlib, google-auth-httplib2, google-api-core, google-api-python-client\nSuccessfully installed certifi-2026.7.22 cffi-2.1.1 charset_normalizer-3.5.2 cryptography-50.0.2 google-api-core-2.41.0 google-api-python-client-2.108.0 google-auth-2.61.0 google-auth-httplib2-0.2.0 google-auth-oauthlib-1.2.0 googleapis-common-protos-1.75.5 httplib2-0.32.0 idna-3.20 oauthlib-4.0.0 opentelemetry-api-1.45.1 proto-plus-1.29.0 protobuf-7.36.2 pyasn1-0.6.4 pyasn1-modules-0.4.2 pycparser-3.1 pyparsing-3.3.3 requests-2.34.2 requests-oauthlib-2.0.0 typing-extensions-4.16.0 uritemplate-4.2.0 urllib3-2.8.0\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "google-auth-oauthlib==1.2.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- google-auth-oauthlib==1.2.0",
+      "exit": 0,
+      "output_tail": "Collecting google-auth-oauthlib==1.2.0\n  Using cached google_auth_oauthlib-1.2.0-py2.py3-none-any.whl.metadata (2.7 kB)\nUsing cached google_auth_oauthlib-1.2.0-py2.py3-none-any.whl (24 kB)\nWould install google-auth-oauthlib-1.2.0\n"
+    },
+    {
+      "manifest": "requirements.txt",
+      "requirement": "google-auth-httplib2==0.2.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- google-auth-httplib2==0.2.0",
+      "exit": 0,
+      "output_tail": "Collecting google-auth-httplib2==0.2.0\n  Using cached google_auth_httplib2-0.2.0-py2.py3-none-any.whl.metadata (2.2 kB)\nUsing cached google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)\nWould install google-auth-httplib2-0.2.0\n"
+    },
+    {
+      "manifest": "requirements.txt",
+      "requirement": "google-api-python-client==2.108.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- google-api-python-client==2.108.0",
+      "exit": 0,
+      "output_tail": "Collecting google-api-python-client==2.108.0\n  Using cached google_api_python_client-2.108.0-py2.py3-none-any.whl.metadata (6.6 kB)\nUsing cached google_api_python_client-2.108.0-py2.py3-none-any.whl (12.8 MB)\nWould install google-api-python-client-2.108.0\n"
+    }
+  ]
+}

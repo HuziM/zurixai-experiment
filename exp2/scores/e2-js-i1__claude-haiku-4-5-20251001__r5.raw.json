@@ -1,0 +1,80 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 0,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 1,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 1,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [],
+          "details": {
+            "discord.js": {
+              "status": "ok",
+              "latest_version": "14.27.0",
+              "last_modified": "2026-10-01T12:16:26.634Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.86
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0,
+      "output_tail": "\nadded 25 packages in 14s\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "discord.js@^14.14.0",
+      "package": "discord.js",
+      "spec": "^14.14.0",
+      "cmd": "npm view discord.js@^14.14.0 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"14.14.0\",\n  \"14.14.1\",\n  \"14.15.0\",\n  \"14.15.1\",\n  \"14.15.2\",\n  \"14.15.3\",\n  \"14.16.0\",\n  \"14.16.1\",\n  \"14.16.2\",\n  \"14.16.3\",\n  \"14.17.0\",\n  \"14.17.1\",\n  \"14.17.2\",\n  \"14.17.3\",\n  \"14.18.0\",\n  \"14.19.0\",\n  \"14.19.1\",\n  \"14.19.2\",\n  \"14.19.3\",\n  \"14.20.0\",\n  \"14.21.0\",\n  \"14.22.0\",\n  \"14.22.1\",\n  \"14.23.0\",\n  \"14.23.1\",\n  \"14.23.2\",\n  \"14.24.0\",\n  \"14.24.1\",\n  \"14.24.2\",\n  \"14.25.0\",\n  \"14.25.1\",\n  \"14.26.0\",\n  \"14.26.1\",\n  \"14.26.2\",\n  \"14.26.3\",\n  \"14.26.4\",\n  \"14.26.5\",\n  \"14.27.0\"\n]\n",
+      "output_tail": "[\n  \"14.14.0\",\n  \"14.14.1\",\n  \"14.15.0\",\n  \"14.15.1\",\n  \"14.15.2\",\n  \"14.15.3\",\n  \"14.16.0\",\n  \"14.16.1\",\n  \"14.16.2\",\n  \"14.16.3\",\n  \"14.17.0\",\n  \"14.17.1\",\n  \"14.17.2\",\n  \"14.17.3\",\n  \"14.18.0\",\n  \"14.19.0\",\n  \"14.19.1\",\n  \"14.19.2\",\n  \"14.19.3\",\n  \"14.20.0\",\n  \"14.21.0\",\n  \"14.22.0\",\n  \"14.22.1\",\n  \"14.23.0\",\n  \"14.23.1\",\n  \"14.23.2\",\n  \"14.24.0\",\n  \"14.24.1\",\n  \"14.24.2\",\n  \"14.25.0\",\n  \"14.25.1\",\n  \"14.26.0\",\n  \"14.26.1\",\n  \"14.26.2\",\n  \"14.26.3\",\n  \"14.26.4\",\n  \"14.26.5\",\n  \"14.27.0\"\n]\n"
+    }
+  ]
+}

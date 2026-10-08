@@ -1,0 +1,104 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 2,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "jsonwebtoken",
+              "source": "npm",
+              "spec": "^9.1.0",
+              "latest_version": "9.0.3"
+            }
+          ],
+          "details": {
+            "express": {
+              "status": "ok",
+              "latest_version": "5.2.1",
+              "last_modified": "2026-10-01T10:45:23.339Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "jsonwebtoken": {
+              "status": "ok",
+              "latest_version": "9.0.3",
+              "last_modified": "2026-07-08T12:39:21.992Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.27
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 1,
+      "output_tail": "npm error code ETARGET\nnpm error notarget No matching version found for jsonwebtoken@^9.1.0.\nnpm error notarget In most cases you or one of your dependencies are requesting\nnpm error notarget a package version that doesn't exist.\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_39_31_262Z-debug-0.log\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "express@^4.18.2",
+      "package": "express",
+      "spec": "^4.18.2",
+      "cmd": "npm view express@^4.18.2 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"4.18.2\",\n  \"4.18.3\",\n  \"4.19.0\",\n  \"4.19.1\",\n  \"4.19.2\",\n  \"4.20.0\",\n  \"4.21.0\",\n  \"4.21.1\",\n  \"4.21.2\",\n  \"4.22.0\",\n  \"4.22.1\",\n  \"4.22.2\",\n  \"4.22.3\"\n]\n",
+      "output_tail": "[\n  \"4.18.2\",\n  \"4.18.3\",\n  \"4.19.0\",\n  \"4.19.1\",\n  \"4.19.2\",\n  \"4.20.0\",\n  \"4.21.0\",\n  \"4.21.1\",\n  \"4.21.2\",\n  \"4.22.0\",\n  \"4.22.1\",\n  \"4.22.2\",\n  \"4.22.3\"\n]\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "jsonwebtoken@^9.1.0",
+      "package": "jsonwebtoken",
+      "spec": "^9.1.0",
+      "cmd": "npm view jsonwebtoken@^9.1.0 version --json",
+      "exit": 1,
+      "stdout": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^9.1.0\",\n    \"detail\": \"'jsonwebtoken@^9.1.0' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\n",
+      "output_tail": "{\n  \"error\": {\n    \"code\": \"E404\",\n    \"summary\": \"No match found for version ^9.1.0\",\n    \"detail\": \"'jsonwebtoken@^9.1.0' is not in this registry.\\n\\nNote that you can also install from a\\ntarball, folder, http url, or git url.\"\n  }\n}\nnpm error code E404\nnpm error 404 No match found for version ^9.1.0\nnpm error 404\nnpm error 404  'jsonwebtoken@^9.1.0' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /home/scorer/.npm/_logs/2026-10-08T16_39_38_339Z-debug-0.log\n"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "pypi_imports": {
+          "valid": 1,
+          "invalid": 1,
+          "invalid_imports": [
+            "google (from gtfs_realtime_feed.py)"
+          ],
+          "undeclared": {
+            "google": {
+              "package": "protobuf",
+              "files": [
+                "gtfs_realtime_feed.py"
+              ]
+            }
+          },
+          "checked_files": 1
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [
+            {
+              "name": "google",
+              "package": "protobuf",
+              "source": "pypi",
+              "files": [
+                "gtfs_realtime_feed.py"
+              ]
+            }
+          ],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 2,
+          "suspicious": 0,
+          "unavailable": 0,
+          "suspicious_packages": [],
+          "version_not_found": [
+            {
+              "name": "gtfs-realtime-bindings",
+              "source": "pypi",
+              "spec": "==0.0.8",
+              "latest_version": "3.0.0"
+            }
+          ],
+          "details": {
+            "requests": {
+              "status": "ok",
+              "latest_version": "2.34.2",
+              "last_release": "2026-05-14T19:25:26.443000Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            },
+            "gtfs-realtime-bindings": {
+              "status": "ok",
+              "latest_version": "3.0.0",
+              "last_release": "2026-09-17T17:57:38.114319Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 1.38
+    }
+  },
+  "installs": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 1,
+      "output_tail": "Collecting requests==2.31.0 (from -r requirements.txt (line 1))\n  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)\nERROR: Could not find a version that satisfies the requirement gtfs-realtime-bindings==0.0.8 (from versions: 0.0.1, 0.0.2, 0.0.3, 0.0.4, 0.0.5, 0.0.6, 0.0.7, 1.0.0, 2.0.0, 2.1.0, 2.2.0, 3.0.0)\nERROR: No matching distribution found for gtfs-realtime-bindings==0.0.8\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "requirements.txt",
+      "requirement": "requests==2.31.0",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- requests==2.31.0",
+      "exit": 0,
+      "output_tail": "Collecting requests==2.31.0\n  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)\nDownloading requests-2.31.0-py3-none-any.whl (62 kB)\nWould install requests-2.31.0\n"
+    },
+    {
+      "manifest": "requirements.txt",
+      "requirement": "gtfs-realtime-bindings==0.0.8",
+      "cmd": "/tmp/venv-resolve/bin/pip install --dry-run --no-deps --ignore-installed -- gtfs-realtime-bindings==0.0.8",
+      "exit": 1,
+      "output_tail": "ERROR: Could not find a version that satisfies the requirement gtfs-realtime-bindings==0.0.8 (from versions: 0.0.1, 0.0.2, 0.0.3, 0.0.4, 0.0.5, 0.0.6, 0.0.7, 1.0.0, 2.0.0, 2.1.0, 2.2.0, 3.0.0)\nERROR: No matching distribution found for gtfs-realtime-bindings==0.0.8\n"
+    }
+  ]
+}

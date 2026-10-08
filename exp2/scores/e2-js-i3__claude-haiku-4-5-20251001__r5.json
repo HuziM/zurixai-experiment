@@ -1,0 +1,44 @@
+{
+  "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r5",
+  "task": "e2-js-i3",
+  "language": "typescript",
+  "category": "integration",
+  "model": "claude-haiku-4-5-20251001",
+  "rep": 5,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "zurix_exit": 1,
+  "zurix_suspicious": [],
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [
+    {
+      "package": "@hubspot/api-client",
+      "registry": "npm",
+      "requested": "^11.3.4"
+    }
+  ],
+  "undeclared": [],
+  "zurix_version_not_found": [
+    {
+      "package": "@hubspot/api-client",
+      "registry": "npm",
+      "spec": "^11.3.4"
+    }
+  ],
+  "unverified": [],
+  "install": "fail",
+  "install_records": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 1
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.047038800000000006,
+  "num_turns": 8
+}

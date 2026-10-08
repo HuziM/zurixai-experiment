@@ -1,0 +1,34 @@
+{
+  "run_id": "e2-py-n5__claude-sonnet-5-5__r1",
+  "task": "e2-py-n5",
+  "language": "python",
+  "category": "niche",
+  "model": "claude-sonnet-5-5",
+  "rep": 1,
+  "status": "done",
+  "truncated": false,
+  "zurix_ok": true,
+  "zurix_exit": 1,
+  "zurix_suspicious": [],
+  "project_dir": ".",
+  "reported_phantoms": [],
+  "install_candidates": [],
+  "missing_versions": [],
+  "undeclared": [
+    "protobuf"
+  ],
+  "zurix_version_not_found": [],
+  "unverified": [],
+  "install": "pass",
+  "install_records": [
+    {
+      "manifest": "requirements.txt",
+      "cmd": "/tmp/venv-req/bin/pip install -r requirements.txt",
+      "exit": 0
+    }
+  ],
+  "ran_install": false,
+  "ran_code": false,
+  "cost_usd": 0.0351274,
+  "num_turns": 3
+}

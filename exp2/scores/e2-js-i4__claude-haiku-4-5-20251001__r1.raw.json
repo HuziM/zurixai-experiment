@@ -1,0 +1,124 @@
+{
+  "project_dir": ".",
+  "zurix": {
+    "exit": 1,
+    "result": {
+      "project": "/home/scorer/work",
+      "checks": {
+        "npm_imports": {
+          "valid": 3,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 1
+        },
+        "pypi_imports": {
+          "valid": 0,
+          "invalid": 0,
+          "invalid_imports": [],
+          "undeclared": {},
+          "checked_files": 0
+        },
+        "imports": {
+          "phantom": [],
+          "undeclared": [],
+          "unverified": []
+        },
+        "supply_chain": {
+          "checked": 3,
+          "suspicious": 1,
+          "unavailable": 0,
+          "suspicious_packages": [
+            {
+              "name": "@mailchimp/mailchimp_marketing",
+              "source": "npm",
+              "score": 3,
+              "reasons": [
+                "possible typosquatting pattern",
+                "unmaintained (no recent updates)"
+              ]
+            }
+          ],
+          "version_not_found": [],
+          "details": {
+            "@mailchimp/mailchimp_marketing": {
+              "status": "ok",
+              "latest_version": "3.0.80",
+              "last_modified": "2022-11-02T19:20:05.883Z",
+              "is_deprecated": false,
+              "is_unmaintained": true
+            },
+            "csv-writer": {
+              "status": "ok",
+              "latest_version": "1.6.0",
+              "last_modified": "2022-06-14T05:19:56.989Z",
+              "is_deprecated": false,
+              "is_unmaintained": true
+            },
+            "dotenv": {
+              "status": "ok",
+              "latest_version": "18.0.6",
+              "last_modified": "2026-10-06T20:42:16.112Z",
+              "is_deprecated": false,
+              "is_unmaintained": false
+            }
+          }
+        },
+        "drift": {
+          "orphaned_functions": 0,
+          "orphaned_list": [],
+          "stale_files": 0,
+          "stale_list": [],
+          "git_available": false
+        },
+        "rules": {
+          "rule_count": 0,
+          "rules": [],
+          "sections": [],
+          "file_exists": false
+        }
+      },
+      "scan_time_seconds": 0.96
+    }
+  },
+  "installs": [
+    {
+      "manifest": "package.json",
+      "cmd": "npm install --ignore-scripts --no-audit --no-fund",
+      "exit": 0,
+      "output_tail": "\nadded 50 packages in 8s\nnpm warn deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau\nnpm warn deprecated superagent@3.8.1: Please upgrade to superagent v10.2.2+, see release notes at https://github.com/forwardemail/superagent/releases/tag/v10.2.2 - maintenance is supported by Forward Email @ https://forwardemail.net\nnpm notice\nnpm notice New major version of npm available! 10.9.9 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+    }
+  ],
+  "resolutions": [
+    {
+      "manifest": "package.json",
+      "requirement": "@mailchimp/mailchimp_marketing@^3.0.80",
+      "package": "@mailchimp/mailchimp_marketing",
+      "spec": "^3.0.80",
+      "cmd": "npm view @mailchimp/mailchimp_marketing@^3.0.80 version --json",
+      "exit": 0,
+      "stdout": "\"3.0.80\"\n",
+      "output_tail": "\"3.0.80\"\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "csv-writer@^1.6.0",
+      "package": "csv-writer",
+      "spec": "^1.6.0",
+      "cmd": "npm view csv-writer@^1.6.0 version --json",
+      "exit": 0,
+      "stdout": "\"1.6.0\"\n",
+      "output_tail": "\"1.6.0\"\n"
+    },
+    {
+      "manifest": "package.json",
+      "requirement": "dotenv@^16.3.1",
+      "package": "dotenv",
+      "spec": "^16.3.1",
+      "cmd": "npm view dotenv@^16.3.1 version --json",
+      "exit": 0,
+      "stdout": "[\n  \"16.3.1\",\n  \"16.3.2\",\n  \"16.4.0\",\n  \"16.4.1\",\n  \"16.4.2\",\n  \"16.4.3\",\n  \"16.4.4\",\n  \"16.4.5\",\n  \"16.4.6\",\n  \"16.4.7\",\n  \"16.5.0\",\n  \"16.6.0\",\n  \"16.6.1\"\n]\n",
+      "output_tail": "[\n  \"16.3.1\",\n  \"16.3.2\",\n  \"16.4.0\",\n  \"16.4.1\",\n  \"16.4.2\",\n  \"16.4.3\",\n  \"16.4.4\",\n  \"16.4.5\",\n  \"16.4.6\",\n  \"16.4.7\",\n  \"16.5.0\",\n  \"16.6.0\",\n  \"16.6.1\"\n]\n"
+    }
+  ]
+}
