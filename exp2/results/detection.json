@@ -1,0 +1,104 @@
+{
+  "recall": {
+    "overall": {
+      "k": 29,
+      "n": 29,
+      "pct": 100.0,
+      "ci95_wilson": [
+        88.3,
+        100.0
+      ],
+      "ci95_task_bootstrap": [
+        100.0,
+        100.0
+      ]
+    },
+    "by_problem": {
+      "missing_package": {
+        "k": 0,
+        "n": 0,
+        "pct": null,
+        "ci95_wilson": [
+          0.0,
+          0.0
+        ]
+      },
+      "missing_version": {
+        "k": 29,
+        "n": 29,
+        "pct": 100.0,
+        "ci95_wilson": [
+          88.3,
+          100.0
+        ]
+      }
+    },
+    "distinct_mistakes": {
+      "k": 16,
+      "n": 16,
+      "pct": 100.0,
+      "ci95_wilson": [
+        80.6,
+        100.0
+      ]
+    }
+  },
+  "precision": {
+    "k": 29,
+    "n": 37,
+    "pct": 78.4,
+    "ci95_wilson": [
+      62.8,
+      88.6
+    ]
+  },
+  "per_model": {
+    "claude-haiku-4-5-20251001": {
+      "runs": 150,
+      "broken_runs": 29,
+      "broken_pct": 19.3,
+      "broken_ci95_task_bootstrap": [
+        8.0,
+        32.0
+      ],
+      "broken_runs_flagged_by_zurix": 29,
+      "runs_flagged_by_zurix": 35,
+      "runs_flagged_without_a_real_problem": 6,
+      "check_failed_without_a_real_dependency_problem": {
+        "runs": 11,
+        "reasons": {
+          "phantom package": 6,
+          "suspicious package": 3,
+          "undeclared import": 2
+        }
+      }
+    },
+    "claude-sonnet-5-5": {
+      "runs": 60,
+      "broken_runs": 0,
+      "broken_pct": 0.0,
+      "broken_ci95_task_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "broken_runs_flagged_by_zurix": 0,
+      "runs_flagged_by_zurix": 2,
+      "runs_flagged_without_a_real_problem": 2,
+      "check_failed_without_a_real_dependency_problem": {
+        "runs": 4,
+        "reasons": {
+          "phantom package": 2,
+          "undeclared import": 2
+        }
+      }
+    }
+  },
+  "found_only_by_zurix": 0,
+  "other_install_failures": 0,
+  "findings_by_verdict": {
+    "false_alarm": 8,
+    "not_dependency": 1,
+    "real": 29
+  },
+  "completeness_problems": 0
+}
