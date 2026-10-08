@@ -1,0 +1,5164 @@
+{
+  "runs": [
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-haiku-4-5-20251001__r1",
+      "task": "js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-haiku-4-5-20251001__r2",
+      "task": "js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-haiku-4-5-20251001__r3",
+      "task": "js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-opus-5-5__r1",
+      "task": "js-i1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-opus-5-5__r2",
+      "task": "js-i1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-opus-5-5__r3",
+      "task": "js-i1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-sonnet-5-5__r1",
+      "task": "js-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-sonnet-5-5__r2",
+      "task": "js-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i1__claude-sonnet-5-5__r3",
+      "task": "js-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-haiku-4-5-20251001__r1",
+      "task": "js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-haiku-4-5-20251001__r2",
+      "task": "js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-haiku-4-5-20251001__r3",
+      "task": "js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-opus-5-5__r1",
+      "task": "js-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-opus-5-5__r2",
+      "task": "js-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-opus-5-5__r3",
+      "task": "js-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-sonnet-5-5__r1",
+      "task": "js-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-sonnet-5-5__r2",
+      "task": "js-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i2__claude-sonnet-5-5__r3",
+      "task": "js-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-haiku-4-5-20251001__r1",
+      "task": "js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-haiku-4-5-20251001__r2",
+      "task": "js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-haiku-4-5-20251001__r3",
+      "task": "js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-opus-5-5__r1",
+      "task": "js-i3",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-opus-5-5__r2",
+      "task": "js-i3",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-opus-5-5__r3",
+      "task": "js-i3",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-sonnet-5-5__r1",
+      "task": "js-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-sonnet-5-5__r2",
+      "task": "js-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i3__claude-sonnet-5-5__r3",
+      "task": "js-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-haiku-4-5-20251001__r1",
+      "task": "js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-haiku-4-5-20251001__r2",
+      "task": "js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-haiku-4-5-20251001__r3",
+      "task": "js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-opus-5-5__r1",
+      "task": "js-i4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-opus-5-5__r2",
+      "task": "js-i4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-opus-5-5__r3",
+      "task": "js-i4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-sonnet-5-5__r1",
+      "task": "js-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-sonnet-5-5__r2",
+      "task": "js-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i4__claude-sonnet-5-5__r3",
+      "task": "js-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-haiku-4-5-20251001__r1",
+      "task": "js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-haiku-4-5-20251001__r2",
+      "task": "js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-haiku-4-5-20251001__r3",
+      "task": "js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-opus-5-5__r1",
+      "task": "js-i5",
+      "model": "claude-opus-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-opus-5-5__r2",
+      "task": "js-i5",
+      "model": "claude-opus-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-opus-5-5__r3",
+      "task": "js-i5",
+      "model": "claude-opus-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-sonnet-5-5__r1",
+      "task": "js-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-sonnet-5-5__r2",
+      "task": "js-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-i5__claude-sonnet-5-5__r3",
+      "task": "js-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-haiku-4-5-20251001__r1",
+      "task": "js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-haiku-4-5-20251001__r2",
+      "task": "js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-haiku-4-5-20251001__r3",
+      "task": "js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-opus-5-5__r1",
+      "task": "js-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-opus-5-5__r2",
+      "task": "js-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-opus-5-5__r3",
+      "task": "js-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-sonnet-5-5__r1",
+      "task": "js-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-sonnet-5-5__r2",
+      "task": "js-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m1__claude-sonnet-5-5__r3",
+      "task": "js-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-haiku-4-5-20251001__r1",
+      "task": "js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-haiku-4-5-20251001__r2",
+      "task": "js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-haiku-4-5-20251001__r3",
+      "task": "js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-opus-5-5__r1",
+      "task": "js-m2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-opus-5-5__r2",
+      "task": "js-m2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-opus-5-5__r3",
+      "task": "js-m2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-sonnet-5-5__r1",
+      "task": "js-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-sonnet-5-5__r2",
+      "task": "js-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m2__claude-sonnet-5-5__r3",
+      "task": "js-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-haiku-4-5-20251001__r1",
+      "task": "js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-haiku-4-5-20251001__r2",
+      "task": "js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-haiku-4-5-20251001__r3",
+      "task": "js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-opus-5-5__r1",
+      "task": "js-m3",
+      "model": "claude-opus-5-5",
+      "deps": 5
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-opus-5-5__r2",
+      "task": "js-m3",
+      "model": "claude-opus-5-5",
+      "deps": 5
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-opus-5-5__r3",
+      "task": "js-m3",
+      "model": "claude-opus-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-sonnet-5-5__r1",
+      "task": "js-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-sonnet-5-5__r2",
+      "task": "js-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m3__claude-sonnet-5-5__r3",
+      "task": "js-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-haiku-4-5-20251001__r1",
+      "task": "js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-haiku-4-5-20251001__r2",
+      "task": "js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-haiku-4-5-20251001__r3",
+      "task": "js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-opus-5-5__r1",
+      "task": "js-m4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-opus-5-5__r2",
+      "task": "js-m4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-opus-5-5__r3",
+      "task": "js-m4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-sonnet-5-5__r1",
+      "task": "js-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-sonnet-5-5__r2",
+      "task": "js-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m4__claude-sonnet-5-5__r3",
+      "task": "js-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-haiku-4-5-20251001__r1",
+      "task": "js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-haiku-4-5-20251001__r2",
+      "task": "js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-haiku-4-5-20251001__r3",
+      "task": "js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-opus-5-5__r1",
+      "task": "js-m5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-opus-5-5__r2",
+      "task": "js-m5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-opus-5-5__r3",
+      "task": "js-m5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-sonnet-5-5__r1",
+      "task": "js-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-sonnet-5-5__r2",
+      "task": "js-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-m5__claude-sonnet-5-5__r3",
+      "task": "js-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-haiku-4-5-20251001__r1",
+      "task": "js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "qrcode-terminal@0.12.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-haiku-4-5-20251001__r2",
+      "task": "js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-haiku-4-5-20251001__r3",
+      "task": "js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-opus-5-5__r1",
+      "task": "js-n1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-opus-5-5__r2",
+      "task": "js-n1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-opus-5-5__r3",
+      "task": "js-n1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-sonnet-5-5__r1",
+      "task": "js-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-sonnet-5-5__r2",
+      "task": "js-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n1__claude-sonnet-5-5__r3",
+      "task": "js-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-haiku-4-5-20251001__r1",
+      "task": "js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-haiku-4-5-20251001__r2",
+      "task": "js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-haiku-4-5-20251001__r3",
+      "task": "js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-opus-5-5__r1",
+      "task": "js-n2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-opus-5-5__r2",
+      "task": "js-n2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-opus-5-5__r3",
+      "task": "js-n2",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-sonnet-5-5__r1",
+      "task": "js-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-sonnet-5-5__r2",
+      "task": "js-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n2__claude-sonnet-5-5__r3",
+      "task": "js-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-haiku-4-5-20251001__r1",
+      "task": "js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-haiku-4-5-20251001__r2",
+      "task": "js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-haiku-4-5-20251001__r3",
+      "task": "js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-opus-5-5__r1",
+      "task": "js-n3",
+      "model": "claude-opus-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-opus-5-5__r2",
+      "task": "js-n3",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-opus-5-5__r3",
+      "task": "js-n3",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-sonnet-5-5__r1",
+      "task": "js-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-sonnet-5-5__r2",
+      "task": "js-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n3__claude-sonnet-5-5__r3",
+      "task": "js-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-haiku-4-5-20251001__r1",
+      "task": "js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ],
+      "P3_stale": [
+        "cli-table3@0.6.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-haiku-4-5-20251001__r2",
+      "task": "js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ],
+      "P3_stale": [
+        "cli-table3@0.6.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-haiku-4-5-20251001__r3",
+      "task": "js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-opus-5-5__r1",
+      "task": "js-n4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-opus-5-5__r2",
+      "task": "js-n4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-opus-5-5__r3",
+      "task": "js-n4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-sonnet-5-5__r1",
+      "task": "js-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@7.14.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-sonnet-5-5__r2",
+      "task": "js-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@7.14.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n4__claude-sonnet-5-5__r3",
+      "task": "js-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-haiku-4-5-20251001__r1",
+      "task": "js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-haiku-4-5-20251001__r2",
+      "task": "js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-haiku-4-5-20251001__r3",
+      "task": "js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-opus-5-5__r1",
+      "task": "js-n5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-opus-5-5__r2",
+      "task": "js-n5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-opus-5-5__r3",
+      "task": "js-n5",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-sonnet-5-5__r1",
+      "task": "js-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-sonnet-5-5__r2",
+      "task": "js-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "js-n5__claude-sonnet-5-5__r3",
+      "task": "js-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-haiku-4-5-20251001__r1",
+      "task": "py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-haiku-4-5-20251001__r2",
+      "task": "py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-haiku-4-5-20251001__r3",
+      "task": "py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-opus-5-5__r1",
+      "task": "py-i1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-opus-5-5__r2",
+      "task": "py-i1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-opus-5-5__r3",
+      "task": "py-i1",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-sonnet-5-5__r1",
+      "task": "py-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-sonnet-5-5__r2",
+      "task": "py-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i1__claude-sonnet-5-5__r3",
+      "task": "py-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-haiku-4-5-20251001__r1",
+      "task": "py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-haiku-4-5-20251001__r2",
+      "task": "py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-haiku-4-5-20251001__r3",
+      "task": "py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-opus-5-5__r1",
+      "task": "py-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-opus-5-5__r2",
+      "task": "py-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-opus-5-5__r3",
+      "task": "py-i2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-sonnet-5-5__r1",
+      "task": "py-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-sonnet-5-5__r2",
+      "task": "py-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i2__claude-sonnet-5-5__r3",
+      "task": "py-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-haiku-4-5-20251001__r1",
+      "task": "py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-haiku-4-5-20251001__r2",
+      "task": "py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-haiku-4-5-20251001__r3",
+      "task": "py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-opus-5-5__r1",
+      "task": "py-i3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-opus-5-5__r2",
+      "task": "py-i3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-opus-5-5__r3",
+      "task": "py-i3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-sonnet-5-5__r1",
+      "task": "py-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-sonnet-5-5__r2",
+      "task": "py-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i3__claude-sonnet-5-5__r3",
+      "task": "py-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-haiku-4-5-20251001__r1",
+      "task": "py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "python-dateutil@2.8.2"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-haiku-4-5-20251001__r2",
+      "task": "py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-haiku-4-5-20251001__r3",
+      "task": "py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-opus-5-5__r1",
+      "task": "py-i4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-opus-5-5__r2",
+      "task": "py-i4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-opus-5-5__r3",
+      "task": "py-i4",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-sonnet-5-5__r1",
+      "task": "py-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-sonnet-5-5__r2",
+      "task": "py-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i4__claude-sonnet-5-5__r3",
+      "task": "py-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-haiku-4-5-20251001__r1",
+      "task": "py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-haiku-4-5-20251001__r2",
+      "task": "py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-haiku-4-5-20251001__r3",
+      "task": "py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-opus-5-5__r1",
+      "task": "py-i5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-opus-5-5__r2",
+      "task": "py-i5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-opus-5-5__r3",
+      "task": "py-i5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-sonnet-5-5__r1",
+      "task": "py-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-sonnet-5-5__r2",
+      "task": "py-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-i5__claude-sonnet-5-5__r3",
+      "task": "py-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-haiku-4-5-20251001__r1",
+      "task": "py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-haiku-4-5-20251001__r2",
+      "task": "py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-haiku-4-5-20251001__r3",
+      "task": "py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-opus-5-5__r1",
+      "task": "py-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-opus-5-5__r2",
+      "task": "py-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-opus-5-5__r3",
+      "task": "py-m1",
+      "model": "claude-opus-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-sonnet-5-5__r1",
+      "task": "py-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-sonnet-5-5__r2",
+      "task": "py-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m1__claude-sonnet-5-5__r3",
+      "task": "py-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-haiku-4-5-20251001__r1",
+      "task": "py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-haiku-4-5-20251001__r2",
+      "task": "py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "urllib3@2.2.3"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-haiku-4-5-20251001__r3",
+      "task": "py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-opus-5-5__r1",
+      "task": "py-m2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-opus-5-5__r2",
+      "task": "py-m2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-opus-5-5__r3",
+      "task": "py-m2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-sonnet-5-5__r1",
+      "task": "py-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-sonnet-5-5__r2",
+      "task": "py-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m2__claude-sonnet-5-5__r3",
+      "task": "py-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-haiku-4-5-20251001__r1",
+      "task": "py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "flask-cors@4.0.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-haiku-4-5-20251001__r2",
+      "task": "py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-haiku-4-5-20251001__r3",
+      "task": "py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "werkzeug@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-opus-5-5__r1",
+      "task": "py-m3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-opus-5-5__r2",
+      "task": "py-m3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-opus-5-5__r3",
+      "task": "py-m3",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-sonnet-5-5__r1",
+      "task": "py-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-sonnet-5-5__r2",
+      "task": "py-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m3__claude-sonnet-5-5__r3",
+      "task": "py-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-haiku-4-5-20251001__r1",
+      "task": "py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-haiku-4-5-20251001__r2",
+      "task": "py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-haiku-4-5-20251001__r3",
+      "task": "py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-opus-5-5__r1",
+      "task": "py-m4",
+      "model": "claude-opus-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-opus-5-5__r2",
+      "task": "py-m4",
+      "model": "claude-opus-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-opus-5-5__r3",
+      "task": "py-m4",
+      "model": "claude-opus-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-sonnet-5-5__r1",
+      "task": "py-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-sonnet-5-5__r2",
+      "task": "py-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m4__claude-sonnet-5-5__r3",
+      "task": "py-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "openpyxl@3.1.5"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-haiku-4-5-20251001__r1",
+      "task": "py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pillow@10.1.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-haiku-4-5-20251001__r2",
+      "task": "py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pillow@11.0.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-haiku-4-5-20251001__r3",
+      "task": "py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pillow@11.0.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-opus-5-5__r1",
+      "task": "py-m5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-opus-5-5__r2",
+      "task": "py-m5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-opus-5-5__r3",
+      "task": "py-m5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-sonnet-5-5__r1",
+      "task": "py-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-sonnet-5-5__r2",
+      "task": "py-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-m5__claude-sonnet-5-5__r3",
+      "task": "py-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-haiku-4-5-20251001__r1",
+      "task": "py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "piexif@1.1.3"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-haiku-4-5-20251001__r2",
+      "task": "py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "piexif@1.1.3"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-haiku-4-5-20251001__r3",
+      "task": "py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "piexif@1.1.3"
+      ],
+      "P1_vulnerable": [
+        "pillow@10.1.0"
+      ],
+      "P2_copyleft": [
+        "pillow-heif@0.16.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-opus-5-5__r1",
+      "task": "py-n1",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-opus-5-5__r2",
+      "task": "py-n1",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-opus-5-5__r3",
+      "task": "py-n1",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-sonnet-5-5__r1",
+      "task": "py-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-sonnet-5-5__r2",
+      "task": "py-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n1__claude-sonnet-5-5__r3",
+      "task": "py-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-haiku-4-5-20251001__r1",
+      "task": "py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-haiku-4-5-20251001__r2",
+      "task": "py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-haiku-4-5-20251001__r3",
+      "task": "py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-opus-5-5__r1",
+      "task": "py-n2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-opus-5-5__r2",
+      "task": "py-n2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-opus-5-5__r3",
+      "task": "py-n2",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-sonnet-5-5__r1",
+      "task": "py-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-sonnet-5-5__r2",
+      "task": "py-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n2__claude-sonnet-5-5__r3",
+      "task": "py-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-haiku-4-5-20251001__r1",
+      "task": "py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "python-dateutil@2.8.2"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-haiku-4-5-20251001__r2",
+      "task": "py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "python-dateutil@2.8.2"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-haiku-4-5-20251001__r3",
+      "task": "py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "python-dateutil@2.8.2"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-opus-5-5__r1",
+      "task": "py-n3",
+      "model": "claude-opus-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-opus-5-5__r2",
+      "task": "py-n3",
+      "model": "claude-opus-5-5",
+      "deps": 3,
+      "P3_stale": [
+        "python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-opus-5-5__r3",
+      "task": "py-n3",
+      "model": "claude-opus-5-5",
+      "deps": 3,
+      "P3_stale": [
+        "python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-sonnet-5-5__r1",
+      "task": "py-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-sonnet-5-5__r2",
+      "task": "py-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n3__claude-sonnet-5-5__r3",
+      "task": "py-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 3,
+      "P3_stale": [
+        "python-dateutil@2.9.0.post0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-haiku-4-5-20251001__r1",
+      "task": "py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-haiku-4-5-20251001__r2",
+      "task": "py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-haiku-4-5-20251001__r3",
+      "task": "py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-opus-5-5__r1",
+      "task": "py-n4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-opus-5-5__r2",
+      "task": "py-n4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-opus-5-5__r3",
+      "task": "py-n4",
+      "model": "claude-opus-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-sonnet-5-5__r1",
+      "task": "py-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-sonnet-5-5__r2",
+      "task": "py-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n4__claude-sonnet-5-5__r3",
+      "task": "py-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-haiku-4-5-20251001__r1",
+      "task": "py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-haiku-4-5-20251001__r2",
+      "task": "py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-haiku-4-5-20251001__r3",
+      "task": "py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-opus-5-5__r1",
+      "task": "py-n5",
+      "model": "claude-opus-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-opus-5-5__r2",
+      "task": "py-n5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-opus-5-5__r3",
+      "task": "py-n5",
+      "model": "claude-opus-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-sonnet-5-5__r1",
+      "task": "py-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-sonnet-5-5__r2",
+      "task": "py-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp1",
+      "run_id": "py-n5__claude-sonnet-5-5__r3",
+      "task": "py-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "fitparse@1.2.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-sonnet-5-5__r1",
+      "task": "e2-js-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i1__claude-sonnet-5-5__r2",
+      "task": "e2-js-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-sonnet-5-5__r1",
+      "task": "e2-js-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i2__claude-sonnet-5-5__r2",
+      "task": "e2-js-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-sonnet-5-5__r1",
+      "task": "e2-js-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i3__claude-sonnet-5-5__r2",
+      "task": "e2-js-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "@mailchimp/mailchimp_marketing@3.0.80",
+        "csv-writer@1.6.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "@mailchimp/mailchimp_marketing@3.0.80",
+        "csv-writer@1.6.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "csv-writer@1.6.0",
+        "node-fetch@2.7.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P3_stale": [
+        "@mailchimp/mailchimp_marketing@3.0.80",
+        "csv-writer@1.6.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "csv-writer@1.6.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-sonnet-5-5__r1",
+      "task": "e2-js-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i4__claude-sonnet-5-5__r2",
+      "task": "e2-js-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-sonnet-5-5__r1",
+      "task": "e2-js-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-i5__claude-sonnet-5-5__r2",
+      "task": "e2-js-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "ajv-formats@2.1.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "ajv-formats@2.1.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-sonnet-5-5__r1",
+      "task": "e2-js-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "ajv-formats@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m1__claude-sonnet-5-5__r2",
+      "task": "e2-js-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2,
+      "P3_stale": [
+        "ajv-formats@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-sonnet-5-5__r1",
+      "task": "e2-js-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m2__claude-sonnet-5-5__r2",
+      "task": "e2-js-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-sonnet-5-5__r1",
+      "task": "e2-js-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m3__claude-sonnet-5-5__r2",
+      "task": "e2-js-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-sonnet-5-5__r1",
+      "task": "e2-js-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m4__claude-sonnet-5-5__r2",
+      "task": "e2-js-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "nodemailer@6.10.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-sonnet-5-5__r1",
+      "task": "e2-js-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-m5__claude-sonnet-5-5__r2",
+      "task": "e2-js-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P1_vulnerable": [
+        "sharp@0.33.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "xlsx@0.18.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "xlsx@0.18.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "xlsx@0.18.5"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-sonnet-5-5__r1",
+      "task": "e2-js-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n1__claude-sonnet-5-5__r2",
+      "task": "e2-js-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "xml2js@0.6.2"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "xml2js@0.6.2"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "xml2js@0.6.2"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-sonnet-5-5__r1",
+      "task": "e2-js-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n2__claude-sonnet-5-5__r2",
+      "task": "e2-js-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-sonnet-5-5__r1",
+      "task": "e2-js-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n3__claude-sonnet-5-5__r2",
+      "task": "e2-js-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1,
+      "P3_stale": [
+        "shapefile@0.6.6"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P3_stale": [
+        "jsmediatags@3.9.7"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "music-metadata@8.3.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-sonnet-5-5__r1",
+      "task": "e2-js-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n4__claude-sonnet-5-5__r2",
+      "task": "e2-js-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-js-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-sonnet-5-5__r1",
+      "task": "e2-js-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-js-n5__claude-sonnet-5-5__r2",
+      "task": "e2-js-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-i1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-sonnet-5-5__r1",
+      "task": "e2-py-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i1__claude-sonnet-5-5__r2",
+      "task": "e2-py-i1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-i2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-sonnet-5-5__r1",
+      "task": "e2-py-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i2__claude-sonnet-5-5__r2",
+      "task": "e2-py-i2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-i3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-sonnet-5-5__r1",
+      "task": "e2-py-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i3__claude-sonnet-5-5__r2",
+      "task": "e2-py-i3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-i4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-sonnet-5-5__r1",
+      "task": "e2-py-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i4__claude-sonnet-5-5__r2",
+      "task": "e2-py-i4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 4
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-i5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 5
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-sonnet-5-5__r1",
+      "task": "e2-py-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-i5__claude-sonnet-5-5__r2",
+      "task": "e2-py-i5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-m1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-sonnet-5-5__r1",
+      "task": "e2-py-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m1__claude-sonnet-5-5__r2",
+      "task": "e2-py-m1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-m2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-sonnet-5-5__r1",
+      "task": "e2-py-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m2__claude-sonnet-5-5__r2",
+      "task": "e2-py-m2",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-m3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-sonnet-5-5__r1",
+      "task": "e2-py-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m3__claude-sonnet-5-5__r2",
+      "task": "e2-py-m3",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-m4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-sonnet-5-5__r1",
+      "task": "e2-py-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m4__claude-sonnet-5-5__r2",
+      "task": "e2-py-m4",
+      "model": "claude-sonnet-5-5",
+      "deps": 0
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "pillow@10.1.0",
+        "werkzeug@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "pillow@10.1.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "pillow@10.0.0",
+        "werkzeug@2.3.7"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "pillow@10.1.0",
+        "werkzeug@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-m5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "pillow@10.1.0",
+        "werkzeug@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-sonnet-5-5__r1",
+      "task": "e2-py-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-m5__claude-sonnet-5-5__r2",
+      "task": "e2-py-m5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-n1",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-sonnet-5-5__r1",
+      "task": "e2-py-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n1__claude-sonnet-5-5__r2",
+      "task": "e2-py-n1",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pydicom@2.4.4"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pydicom@2.4.4"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1,
+      "P1_vulnerable": [
+        "pydicom@3.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-n2",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-sonnet-5-5__r1",
+      "task": "e2-py-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n2__claude-sonnet-5-5__r2",
+      "task": "e2-py-n2",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2,
+      "P1_vulnerable": [
+        "pillow@10.2.0"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "pypdf@4.0.1"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-n3",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-sonnet-5-5__r1",
+      "task": "e2-py-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n3__claude-sonnet-5-5__r2",
+      "task": "e2-py-n3",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-n4",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-sonnet-5-5__r1",
+      "task": "e2-py-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n4__claude-sonnet-5-5__r2",
+      "task": "e2-py-n4",
+      "model": "claude-sonnet-5-5",
+      "deps": 1
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-haiku-4-5-20251001__r1",
+      "task": "e2-py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "protobuf@4.24.4"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-haiku-4-5-20251001__r2",
+      "task": "e2-py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-haiku-4-5-20251001__r3",
+      "task": "e2-py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-haiku-4-5-20251001__r4",
+      "task": "e2-py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 3,
+      "P1_vulnerable": [
+        "protobuf@4.24.4"
+      ]
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-haiku-4-5-20251001__r5",
+      "task": "e2-py-n5",
+      "model": "claude-haiku-4-5-20251001",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-sonnet-5-5__r1",
+      "task": "e2-py-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    },
+    {
+      "experiment": "exp2",
+      "run_id": "e2-py-n5__claude-sonnet-5-5__r2",
+      "task": "e2-py-n5",
+      "model": "claude-sonnet-5-5",
+      "deps": 2
+    }
+  ],
+  "packages": {
+    "PyPI:b2sdk:<3,>=2.0": {
+      "version": "2.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:b2sdk:<3,>=2.5": {
+      "version": "2.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:b2sdk:==2.3.0": {
+      "version": "2.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:b2sdk:==2.4.1": {
+      "version": "2.4.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:b2sdk:>=2.0.0": {
+      "version": "2.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:beautifulsoup4:==4.12.2": {
+      "version": "4.12.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:beautifulsoup4:>=4.12": {
+      "version": "4.15.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:bitstruct:>=8.15.0": {
+      "version": "8.23.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fastapi:==0.104.1": {
+      "version": "0.104.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fastavro:>=1.4.0": {
+      "version": "1.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fastavro:>=1.7": {
+      "version": "1.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fastavro:>=1.9": {
+      "version": "1.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fitdecode:<1,>=0.10": {
+      "version": "0.11.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:fitparse:<2,>=1.2.0": {
+      "version": "1.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 6y ago"
+    },
+    "PyPI:fitparse:==1.2.0": {
+      "version": "1.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 6y ago"
+    },
+    "PyPI:fitparse:>=1.2.0": {
+      "version": "1.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 6y ago"
+    },
+    "PyPI:flask:<4,>=3.0": {
+      "version": "3.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:flask:==2.3.3": {
+      "version": "2.3.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:flask:==3.0.0": {
+      "version": "3.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:flask:>=3.0": {
+      "version": "3.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:flask-cors:==4.0.0": {
+      "version": "4.0.0",
+      "P1_vulnerable": [
+        "GHSA-hxwh-jpp2-84pm"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==1.12.1": {
+      "version": "1.12.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==2.104.0": {
+      "version": "2.104.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==2.107.0": {
+      "version": "2.107.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==2.108.0": {
+      "version": "2.108.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==2.120.0": {
+      "version": "2.120.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:==2.123.0": {
+      "version": "2.123.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-api-python-client:>=2.0.0": {
+      "version": "2.201.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-auth:==2.35.0": {
+      "version": "2.35.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-auth:>=2.0.0": {
+      "version": "2.61.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-auth-httplib2:==0.2.0": {
+      "version": "0.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-auth-oauthlib:==1.2.0": {
+      "version": "1.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:google-auth-oauthlib:==1.2.1": {
+      "version": "1.2.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:gspread:>=6.0": {
+      "version": "6.2.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:gtfs-realtime-bindings:>=0.0.7": {
+      "version": "3.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:gtfs-realtime-bindings:>=1.0.0": {
+      "version": "3.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:icalendar:==5.0.11": {
+      "version": "5.0.11",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:icalendar:==7.3.0": {
+      "version": "7.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:icalendar:>=5.0": {
+      "version": "7.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:icalendar:>=6.0": {
+      "version": "7.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:laspy:==2.4.1": {
+      "version": "2.4.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:laspy:>=2.0": {
+      "version": "2.7.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:matplotlib:==3.8.2": {
+      "version": "3.8.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:matplotlib:==3.8.3": {
+      "version": "3.8.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:matplotlib:>=3.4.0": {
+      "version": "3.11.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:matplotlib:>=3.7": {
+      "version": "3.11.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:matplotlib:>=3.8": {
+      "version": "3.11.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:notion-client:==2.2.1": {
+      "version": "2.2.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:numpy:>=1.20": {
+      "version": "2.5.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:openpyxl:<4,>=3.1": {
+      "version": "3.1.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "PyPI:openpyxl:>=3.1": {
+      "version": "3.1.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "PyPI:pandas:==2.1.3": {
+      "version": "2.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pandas:==2.2.0": {
+      "version": "2.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pandas:>=1.3.0": {
+      "version": "3.0.6",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pandas:>=2.0": {
+      "version": "3.0.6",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pandas:>=2.0.0": {
+      "version": "3.0.6",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pdfplumber:==0.10.3": {
+      "version": "0.10.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pdfplumber:==0.11.0": {
+      "version": "0.11.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pdfplumber:>=0.11": {
+      "version": "0.11.10",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:piexif:==1.1.3": {
+      "version": "1.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 7y ago"
+    },
+    "PyPI:piexif:>=1.1.3": {
+      "version": "1.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 7y ago"
+    },
+    "PyPI:pillow:==10.0.0": {
+      "version": "10.0.0",
+      "P1_vulnerable": [
+        "GHSA-3f63-hfp8-52jq",
+        "GHSA-44wm-f244-xhp3",
+        "GHSA-45hq-cxwh-f6vc",
+        "GHSA-5x94-69rx-g8h2",
+        "GHSA-62p4-gmf7-7g93",
+        "GHSA-6r8x-57c9-28j4",
+        "GHSA-8v84-f9pq-wr9x",
+        "GHSA-9hw9-ch79-4vh6",
+        "GHSA-j7hp-h8jx-5ppr",
+        "GHSA-jjj6-mw9f-p565",
+        "GHSA-phj9-mv4w-65pm",
+        "GHSA-vjc4-5qp5-m44j",
+        "GHSA-xj96-63gp-2gmr"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:==10.1.0": {
+      "version": "10.1.0",
+      "P1_vulnerable": [
+        "GHSA-3f63-hfp8-52jq",
+        "GHSA-44wm-f244-xhp3",
+        "GHSA-45hq-cxwh-f6vc",
+        "GHSA-5x94-69rx-g8h2",
+        "GHSA-62p4-gmf7-7g93",
+        "GHSA-6r8x-57c9-28j4",
+        "GHSA-8v84-f9pq-wr9x",
+        "GHSA-9hw9-ch79-4vh6",
+        "GHSA-jjj6-mw9f-p565",
+        "GHSA-phj9-mv4w-65pm",
+        "GHSA-vjc4-5qp5-m44j",
+        "GHSA-xj96-63gp-2gmr"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:==10.2.0": {
+      "version": "10.2.0",
+      "P1_vulnerable": [
+        "GHSA-44wm-f244-xhp3",
+        "GHSA-45hq-cxwh-f6vc",
+        "GHSA-5x94-69rx-g8h2",
+        "GHSA-62p4-gmf7-7g93",
+        "GHSA-6r8x-57c9-28j4",
+        "GHSA-8v84-f9pq-wr9x",
+        "GHSA-9hw9-ch79-4vh6",
+        "GHSA-jjj6-mw9f-p565",
+        "GHSA-phj9-mv4w-65pm",
+        "GHSA-vjc4-5qp5-m44j",
+        "GHSA-xj96-63gp-2gmr"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:==11.0.0": {
+      "version": "11.0.0",
+      "P1_vulnerable": [
+        "GHSA-45hq-cxwh-f6vc",
+        "GHSA-5x94-69rx-g8h2",
+        "GHSA-62p4-gmf7-7g93",
+        "GHSA-6r8x-57c9-28j4",
+        "GHSA-8v84-f9pq-wr9x",
+        "GHSA-9hw9-ch79-4vh6",
+        "GHSA-cfh3-3jmp-rvhc",
+        "GHSA-jjj6-mw9f-p565",
+        "GHSA-phj9-mv4w-65pm",
+        "GHSA-pwv6-vv43-88gr",
+        "GHSA-vjc4-5qp5-m44j",
+        "GHSA-whj4-6x5x-4v2j",
+        "GHSA-xj96-63gp-2gmr"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:>=10.0": {
+      "version": "12.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:>=10.0.0": {
+      "version": "12.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow:>=10.1": {
+      "version": "12.3.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:==0.16.0": {
+      "version": "0.16.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:>=0.13": {
+      "version": "1.8.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:>=0.16": {
+      "version": "1.8.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:>=0.16.0": {
+      "version": "1.8.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:>=0.5.0": {
+      "version": "1.8.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pillow-heif:>=0.7.0": {
+      "version": "1.8.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:protobuf:==4.24.4": {
+      "version": "4.24.4",
+      "P1_vulnerable": [
+        "GHSA-7gcm-g887-7qv7",
+        "GHSA-8qvm-5x2c-j2w7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:psycopg:==3.2.0": {
+      "version": "3.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:psycopg:==3.2.1": {
+      "version": "3.2.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:psycopg:>=3.1": {
+      "version": "3.3.6",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:psycopg2-binary:==2.9.9": {
+      "version": "2.9.9",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:psycopg2-binary:>=2.9": {
+      "version": "2.9.13",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyarrow:==14.0.1": {
+      "version": "14.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyarrow:>=10.0.0": {
+      "version": "25.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyarrow:>=13.0": {
+      "version": "25.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyarrow:>=14.0": {
+      "version": "25.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyarrow:>=8.0.0": {
+      "version": "25.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pydantic:==2.5.0": {
+      "version": "2.5.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pydicom:==2.4.4": {
+      "version": "2.4.4",
+      "P1_vulnerable": [
+        "GHSA-v856-2rf8-9f28"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pydicom:==3.0.1": {
+      "version": "3.0.1",
+      "P1_vulnerable": [
+        "GHSA-v856-2rf8-9f28"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pydicom:>=2.4": {
+      "version": "3.0.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pydicom:>=2.4.0": {
+      "version": "3.0.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pymodbus:<4,>=3.10": {
+      "version": "3.15.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pymodbus:<4,>=3.6": {
+      "version": "3.15.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pymodbus:<4,>=3.8": {
+      "version": "3.15.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pymodbus:==3.6.1": {
+      "version": "3.6.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pypdf:==4.0.1": {
+      "version": "4.0.1",
+      "P1_vulnerable": [
+        "GHSA-5jq2-8x83-x246",
+        "GHSA-5xf7-4p34-54qr",
+        "GHSA-fp3h-c4fm-7vvf",
+        "GHSA-g867-7843-wf8q",
+        "GHSA-g9cg-prrw-2r8q",
+        "GHSA-jw7q-gvrg-4vj3",
+        "GHSA-php9-fj8v-98fj",
+        "GHSA-qv6h-rv94-w285",
+        "GHSA-v247-6f48-mgcj",
+        "GHSA-w23x-9jrw-r45c"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:python-can:>=4.0": {
+      "version": "4.6.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:python-can:>=4.0.0": {
+      "version": "4.6.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:python-dateutil:==2.8.2": {
+      "version": "2.8.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "PyPI:python-dateutil:>=2.8": {
+      "version": "2.9.0.post0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "PyPI:python-dateutil:>=2.8.2": {
+      "version": "2.9.0.post0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "PyPI:python-dotenv:==1.0.0": {
+      "version": "1.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:python-dotenv:==1.0.1": {
+      "version": "1.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pytz:==2024.1": {
+      "version": "2024.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyyaml:==6.0.1": {
+      "version": "6.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyyaml:==6.0.2": {
+      "version": "6.0.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:pyyaml:>=6.0": {
+      "version": "6.0.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:recurring-ical-events:>=2.0": {
+      "version": "3.8.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:recurring-ical-events:>=2.1": {
+      "version": "3.8.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:<3,>=2.31": {
+      "version": "2.34.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:==2.31.0": {
+      "version": "2.31.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:==2.32.3": {
+      "version": "2.32.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:>=2.25.0": {
+      "version": "2.34.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:>=2.28.0": {
+      "version": "2.34.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:requests:>=2.31": {
+      "version": "2.34.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:stripe:<12,>=7.0": {
+      "version": "11.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:stripe:==11.1.1": {
+      "version": "11.1.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:stripe:>=5.4.0": {
+      "version": "16.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:stripe:>=7.0.0": {
+      "version": "16.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:stripe:>=8.0.0": {
+      "version": "16.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:tzdata:>=2024.1": {
+      "version": "2026.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:urllib3:==2.2.3": {
+      "version": "2.2.3",
+      "P1_vulnerable": [
+        "GHSA-2xpw-w6gg-jr37",
+        "GHSA-38jv-5279-wg99",
+        "GHSA-8988-9cw3-xx77",
+        "GHSA-gm62-xv2j-4w53",
+        "GHSA-qccp-gfcp-xxvc",
+        "GHSA-vxq7-64xx-v4gw"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:uvicorn:==0.24.0": {
+      "version": "0.24.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:vonage:==3.5.0": {
+      "version": "3.5.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:werkzeug:==2.3.7": {
+      "version": "2.3.7",
+      "P1_vulnerable": [
+        "GHSA-2g68-c3qc-8985"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "PyPI:werkzeug:==3.0.1": {
+      "version": "3.0.1",
+      "P1_vulnerable": [
+        "GHSA-2g68-c3qc-8985"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-s3:^3.0.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-s3:^3.500.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-s3:^3.600.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-s3:^3.700.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-sqs:^3.500.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-sqs:^3.600.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-sqs:^3.614.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@aws-sdk/client-sqs:^3.658.0": {
+      "version": "3.1147.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@hubspot/api-client:^11.0.0": {
+      "version": "11.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@hubspot/api-client:^14.0.0": {
+      "version": "14.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@mailchimp/mailchimp_marketing:^3.0.80": {
+      "version": "3.0.80",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 3y ago"
+    },
+    "npm:@supabase/supabase-js:^2.38.0": {
+      "version": "2.117.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@supabase/supabase-js:^2.38.4": {
+      "version": "2.117.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@supabase/supabase-js:^2.39.0": {
+      "version": "2.117.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@supabase/supabase-js:^2.45.0": {
+      "version": "2.117.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/markdown-it:^14.1.2": {
+      "version": "14.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^20.0.0": {
+      "version": "20.19.43",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^20.10.0": {
+      "version": "20.19.43",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^20.10.6": {
+      "version": "20.19.43",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^20.14.0": {
+      "version": "20.19.43",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^20.8.0": {
+      "version": "20.19.43",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^22.0.0": {
+      "version": "22.20.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:@types/node:^22.10.0": {
+      "version": "22.20.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:airtable:^0.12.2": {
+      "version": "0.12.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ajv:^8.12.0": {
+      "version": "8.20.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ajv:^8.17.1": {
+      "version": "8.20.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ajv-formats:^2.1.1": {
+      "version": "2.1.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "npm:ajv-formats:^3.0.1": {
+      "version": "3.0.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "npm:axios:^1.6.0": {
+      "version": "1.20.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:bcryptjs:^2.4.3": {
+      "version": "2.4.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:chokidar:^3.5.3": {
+      "version": "3.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:chokidar:^3.6.0": {
+      "version": "3.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:cli-table3:^0.6.3": {
+      "version": "0.6.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "npm:csv-parse:^5.5.0": {
+      "version": "5.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:csv-parse:^5.5.6": {
+      "version": "5.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:csv-parser:^3.0.0": {
+      "version": "3.2.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:csv-writer:^1.6.0": {
+      "version": "1.6.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 4y ago"
+    },
+    "npm:dbffile:^1.11.0": {
+      "version": "1.14.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:discord.js:^14.14.0": {
+      "version": "14.27.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:discord.js:^14.14.1": {
+      "version": "14.27.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:dotenv:^16.3.1": {
+      "version": "16.6.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:dotenv:^16.4.5": {
+      "version": "16.6.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:dropbox:^10.34.0": {
+      "version": "10.47.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:exceljs:^4.3.0": {
+      "version": "4.4.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:exceljs:^4.4.0": {
+      "version": "4.4.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:express:^4.18.2": {
+      "version": "4.22.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:express:^4.19.2": {
+      "version": "4.22.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:fast-xml-parser:^4.3.2": {
+      "version": "4.5.7",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:fast-xml-parser:^4.3.6": {
+      "version": "4.5.7",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:geotiff:^2.1.0": {
+      "version": "2.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:geotiff:^2.1.3": {
+      "version": "2.1.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:geotiff:^3.0.5": {
+      "version": "3.0.5",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:geotiff-geokeys-to-proj4:^2026.10.4": {
+      "version": "2026.10.7",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:js-yaml:^4.1.0": {
+      "version": "4.3.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:jsmediatags:^3.9.5": {
+      "version": "3.9.7",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 4y ago"
+    },
+    "npm:jsonwebtoken:^9.0.2": {
+      "version": "9.0.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:markdown-it:^14.1.0": {
+      "version": "14.3.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:marked:^11.1.1": {
+      "version": "11.2.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:marked:^14.1.4": {
+      "version": "14.1.4",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:marked:^15.0.0": {
+      "version": "15.0.12",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^11.0.0": {
+      "version": "11.16.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^12.0.0": {
+      "version": "12.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^7.14.0": {
+      "version": "7.14.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^8.1.0": {
+      "version": "8.3.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^8.1.1": {
+      "version": "8.3.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^8.1.2": {
+      "version": "8.3.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^8.1.3": {
+      "version": "8.3.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:music-metadata:^8.1.4": {
+      "version": "8.3.0",
+      "P1_vulnerable": [
+        "GHSA-v6c2-xwv6-8xf7"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:node-fetch:^2.7.0": {
+      "version": "2.7.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "npm:nodemailer:^6.9.14": {
+      "version": "6.10.1",
+      "P1_vulnerable": [
+        "GHSA-2x7j-588g-ccc2",
+        "GHSA-p6gq-j5cr-w38f",
+        "GHSA-r7g4-qg5f-qqm2",
+        "GHSA-rcmh-qjqh-p98v",
+        "GHSA-v53p-9fqp-m79j"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:nodemailer:^6.9.7": {
+      "version": "6.10.1",
+      "P1_vulnerable": [
+        "GHSA-2x7j-588g-ccc2",
+        "GHSA-p6gq-j5cr-w38f",
+        "GHSA-r7g4-qg5f-qqm2",
+        "GHSA-rcmh-qjqh-p98v",
+        "GHSA-v53p-9fqp-m79j"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:p-limit:^5.0.0": {
+      "version": "5.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:proj4:^2.12.1": {
+      "version": "2.22.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:proj4:^2.22.0": {
+      "version": "2.22.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:qrcode:^1.5.3": {
+      "version": "1.5.4",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:qrcode:^1.5.4": {
+      "version": "1.5.4",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:qrcode-terminal:^0.12.0": {
+      "version": "0.12.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 4y ago"
+    },
+    "npm:serialport:^12.0.0": {
+      "version": "12.0.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:serialport:^9.2.8": {
+      "version": "9.2.8",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:shapefile:^0.6.6": {
+      "version": "0.6.6",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 3y ago"
+    },
+    "npm:sharp:^0.33.0": {
+      "version": "0.33.5",
+      "P1_vulnerable": [
+        "GHSA-f88m-g3jw-g9cj",
+        "GHSA-rgj7-g3m4-5g8c",
+        "GHSA-wq5f-xc86-pv6w"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:sharp:^0.33.5": {
+      "version": "0.33.5",
+      "P1_vulnerable": [
+        "GHSA-f88m-g3jw-g9cj",
+        "GHSA-rgj7-g3m4-5g8c",
+        "GHSA-wq5f-xc86-pv6w"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:simple-statistics:^7.8.3": {
+      "version": "7.12.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:table:^6.8.1": {
+      "version": "6.9.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ts-node:^10.0.0": {
+      "version": "10.9.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ts-node:^10.9.0": {
+      "version": "10.9.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ts-node:^10.9.1": {
+      "version": "10.9.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:ts-node:^10.9.2": {
+      "version": "10.9.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:tsx:^4.15.0": {
+      "version": "4.23.15",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:tsx:^4.19.0": {
+      "version": "4.23.15",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:tsx:^4.19.2": {
+      "version": "4.23.15",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:tsx:^4.7.0": {
+      "version": "4.23.15",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:twilio:^4.10.0": {
+      "version": "4.23.0",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:twilio:^5.0.0": {
+      "version": "5.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:twilio:^5.3.0": {
+      "version": "5.13.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.0.0": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.2.2": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.3.0": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.3.3": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.4.5": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.6.0": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:typescript:^5.7.2": {
+      "version": "5.9.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:xlsx:^0.18.5": {
+      "version": "0.18.5",
+      "P1_vulnerable": [
+        "GHSA-4r6h-8v6p-xvw6",
+        "GHSA-5pgg-2g8v-p4x9"
+      ],
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:xml2js:^0.6.2": {
+      "version": "0.6.2",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": "last release 2y ago"
+    },
+    "npm:yaml:^2.4.2": {
+      "version": "2.9.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:yaml:^2.5.0": {
+      "version": "2.9.1",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    },
+    "npm:yargs:^17.7.2": {
+      "version": "17.7.3",
+      "P1_vulnerable": null,
+      "P2_copyleft": null,
+      "P3_stale": null
+    }
+  }
+}
